@@ -12,7 +12,7 @@ class Instance:
     """
     n: int
     m: int
-    a: list[list[float]]
+    a: list[tuple[int, int, float]]
     
     @staticmethod
     def create_instance(number_of_people, group_size, affinity):
