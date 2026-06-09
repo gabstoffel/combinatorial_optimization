@@ -1,5 +1,6 @@
 import sys
 
+from oma import metaheuristica, solvers
 from oma.logger import Logger
 
 
