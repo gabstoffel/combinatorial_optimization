@@ -1,3 +1,4 @@
+import random
 from oma.instance import Instance
 
 def calculate_objective(solution: set[int], affinity: list[list[float]]) -> float:
@@ -14,10 +15,15 @@ def run_tabu_search(
     initial_solution: list[int], 
     max_iter: int = 1000, 
     max_no_improve: int = 100, 
-    tenure: int = 10
+    tenure: int = 10,
+    diversify_freq: int = 50
 ) -> tuple[list[int], float]:
     """
     Executes the Tabu Search algorithm to maximize the group's affinity.
+    
+    Args:
+        diversify_freq: Perform random perturbation every N iterations to escape local optima.
+                       Default 50 means every 50 iters, replace random person.
     """
     n = instance.n
     affinity = instance.affinity
@@ -36,6 +42,15 @@ def run_tabu_search(
     
     while iter_count < max_iter and iters_without_improvement < max_no_improve:
         iter_count += 1
+        
+        # Diversification: random perturbation to escape local optima
+        if diversify_freq > 0 and iter_count % diversify_freq == 0 and iter_count > 1:
+            p_out = random.choice(list(current_solution))
+            p_in = random.choice(list(all_people - current_solution))
+            current_solution.remove(p_out)
+            current_solution.add(p_in)
+            current_obj = calculate_objective(current_solution, affinity)
+            continue
         
         best_delta = -float('inf')
         best_move = None  
@@ -77,7 +92,15 @@ def run_tabu_search(
             else:
                 iters_without_improvement += 1
         else:
-
-            break
+            # No valid move: try perturbation before giving up
+            if iter_count < max_iter - 10:
+                p_out = random.choice(list(current_solution))
+                p_in = random.choice(list(all_people - current_solution))
+                current_solution.remove(p_out)
+                current_solution.add(p_in)
+                current_obj = calculate_objective(current_solution, affinity)
+                iters_without_improvement += 1
+            else:
+                break
             
     return list(best_solution), best_obj
