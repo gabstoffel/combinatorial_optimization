@@ -1,8 +1,8 @@
 import sys
 from oma.instance import load
 from oma.logger import Logger
-from oma.greedy import greedy_construction
-from oma.tabu_search import run_tabu_search
+from metaheuristica.greedy import greedy_construction
+from metaheuristica.tabu_search import run_tabu_search
 
 paths = [
     "dataset/oma01.dat",
@@ -33,10 +33,10 @@ def main():
             best_sol, best_obj = run_tabu_search(
                 instance=instance, 
                 initial_solution=initial_sol,
-                max_iter=1000, 
-                max_no_improve=150, 
-                tenure=12,
-                diversify_freq=50
+                max_iter=10000, 
+                max_no_improve=1000, 
+                tenure=15,
+                diversify_freq=150
             )
 
             logger.info("tabu_search_finished", {"best_affinity": best_obj, "best_solution": best_sol})

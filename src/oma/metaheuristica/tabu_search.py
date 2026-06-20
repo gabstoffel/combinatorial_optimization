@@ -43,7 +43,7 @@ def run_tabu_search(
     while iter_count < max_iter and iters_without_improvement < max_no_improve:
         iter_count += 1
         
-        # Diversification: random perturbation to escape local optima
+        # random perturbation to escape local optima
         if diversify_freq > 0 and iter_count % diversify_freq == 0 and iter_count > 1:
             p_out = random.choice(list(current_solution))
             p_in = random.choice(list(all_people - current_solution))
@@ -92,7 +92,7 @@ def run_tabu_search(
             else:
                 iters_without_improvement += 1
         else:
-            # No valid move: try perturbation before giving up
+            # no valid move: try perturbation before giving up
             if iter_count < max_iter - 10:
                 p_out = random.choice(list(current_solution))
                 p_in = random.choice(list(all_people - current_solution))

@@ -17,7 +17,6 @@ def greedy_construction(instance: Instance, start_person: int = None) -> list[in
     solution = set()
     gains = [0.0] * n
 
-    # Avoid bias: start with random person or specified one
     if start_person is None:
         start_person = random.randint(0, n - 1)
     solution.add(start_person)
