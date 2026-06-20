@@ -3,19 +3,33 @@ from dataclasses import dataclass
 
 @dataclass
 class Instance:
+    """
+        Representa uma instância do problema OMA.
+
+        n: número de pessoas
+        m: tamanho do grupo a selecionar
+        a: lista de triplas (i, j, aᵢⱼ) com i < j, uma por aresta,
+           espelhando o formato do arquivo .dat
+    """
     n: int
     m: int
-    affinity: list[list[float]]
+    a: list[tuple[int, int, float]]
 
+    @staticmethod
+    def create_instance(number_of_people, group_size, affinity):
+        return Instance(n=number_of_people, m=group_size, a=affinity)
 
-def load(path: str) -> Instance:
-    with open(path) as f:
-        n, m = map(int, f.readline().split())
-        affinity = [[0.0] * n for _ in range(n)]
-        for line in f:
-            parts = line.split()
-            i, j = int(parts[0]), int(parts[1])
-            a = float(parts[2])
-            affinity[i][j] = a
-            affinity[j][i] = a
-    return Instance(n=n, m=m, affinity=affinity)
+    @classmethod
+    def from_file(cls, number: int) -> "Instance":
+        path = f"dataset/oma{number:02d}.dat"
+
+        with open(path) as file:
+            n, m = file.readline().split()
+            n, m = int(n), int(m)
+
+            a = []
+            for line in file:
+                i, j, aij = line.split()
+                a.append((int(i), int(j), float(aij)))
+
+        return cls(n=n, m=m, a=a)
