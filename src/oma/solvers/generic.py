@@ -12,12 +12,17 @@ class SolverType(Enum):
 
 class GenericSolver:
     @staticmethod
-    def create(solver_type: SolverType) -> LpSolver:
+    def create(
+        solver_type: SolverType,
+        time_limit: int | None = None,
+    ) -> LpSolver:
         match solver_type:
             case SolverType.HIGHS:
-                return HiGHS(msg=False)
+                return HiGHS(msg=False,timeLimit=time_limit)
+
             case SolverType.CPLEX:
-                return CPLEX_CMD(path=CPLEX_BINARY_PATH, msg=False)
+                return CPLEX_CMD(path=CPLEX_BINARY_PATH, msg=False, timeLimit=time_limit)
+
             case _:
                 raise NotImplementedError(
                     f"Solver {solver_type.value} not yet implemented"
