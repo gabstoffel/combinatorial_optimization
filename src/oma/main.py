@@ -58,6 +58,9 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--seeds", type=int, default=DEFAULT_SEEDS, help="number of random seeds")
     parser.add_argument("--init", choices=("greedy", "random"), default="greedy",
                         help="initial-solution construction for the metaheuristic")
+    parser.add_argument("--deterministic", action="store_true",
+                        help="fully deterministic metaheuristic: fixed greedy start, "
+                             "deterministic perturbation, single run (no random/seeds)")
 
     parser.add_argument("--config-id", default=None, help="label embedded in logs + output dir")
     parser.add_argument("--out-dir", default="logs", help="root directory for metaheuristic logs")
@@ -71,6 +74,11 @@ def parse_args(argv):
 
     if not (args.cplex or args.highs or args.tabu):
         parser.error("choose at least one of --cplex / --highs / --tabu")
+
+    if args.deterministic:
+        if args.init == "random":
+            parser.error("--deterministic is incompatible with --init random")
+        args.seeds = 1
 
     if args.target == "all":
         args.instance_number = None
@@ -160,12 +168,14 @@ def run_metaheuristic(
     init: str,
     config_id: str | None,
     out_dir: str,
+    deterministic: bool = False,
 ):
     logged_params = {**tabu_params, "init": init}
     logger.info("run_metaheuristic.start", {
         "instance_number": instance_number,
         "config_id": config_id,
         "seeds": seeds,
+        "deterministic": deterministic,
         "params": logged_params,
     })
 
@@ -181,15 +191,25 @@ def run_metaheuristic(
     best_obj = -float("inf")
     best_initial = None
 
-    for seed in range(seeds):
-        random.seed(seed)
+    # No modo determinístico: uma única execução, sem semente e sem sorteios
+    # (greedy parte sempre da pessoa 0; perturbação determinística no tabu).
+    # `seed=None` marca, no log, a ausência de semente.
+    runs = [None] if deterministic else list(range(seeds))
+
+    for seed in runs:
+        if not deterministic:
+            random.seed(seed)
 
         start = time.perf_counter()
-        initial = construct(instance)
+        if deterministic:
+            initial = greedy_construction(instance, start_person=0)
+        else:
+            initial = construct(instance)
         initial_obj = calculate_objective(set(initial), affinity)
         _, obj = run_tabu_search(
             instance=instance,
             initial_solution=initial,
+            deterministic=deterministic,
             **tabu_params,
         )
         elapsed_ms = (time.perf_counter() - start) * 1000
@@ -228,7 +248,10 @@ def run_metaheuristic(
 
     print(f"[{META_METHOD}] oma{instance_number:02d} (n={instance.n}, m={instance.m})"
           + (f" config={config_id}" if config_id else ""))
-    print(f"  seeds:     {seeds} ({init} init)")
+    if deterministic:
+        print("  mode:      deterministic (greedy start=0, 1 run)")
+    else:
+        print(f"  seeds:     {seeds} ({init} init)")
     print(f"  best init: {best_initial}")
     print(f"  best:      {best_obj}")
     print()
@@ -272,8 +295,14 @@ def main():
 
     if args.use_meta:
         logger.info("main.metaheuristic_phase", {"method": META_METHOD, "count": len(targets)})
+        meta_init = "greedy" if args.deterministic else args.init
         write_config(
-            {**args.tabu_params, "init": args.init, "seeds": args.seeds},
+            {
+                **args.tabu_params,
+                "init": meta_init,
+                "seeds": args.seeds,
+                "deterministic": args.deterministic,
+            },
             config_id=args.config_id,
             out_dir=args.out_dir,
         )
@@ -282,9 +311,10 @@ def main():
                 i,
                 tabu_params=args.tabu_params,
                 seeds=args.seeds,
-                init=args.init,
+                init=meta_init,
                 config_id=args.config_id,
                 out_dir=args.out_dir,
+                deterministic=args.deterministic,
             )
 
     logger.info("main.done", {})
