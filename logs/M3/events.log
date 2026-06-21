@@ -1,0 +1,1056 @@
+{"event_kind": "main.start", "data": {"argv": ["all", "--tabu", "--max-no-improve", "25", "--config-id", "A2_maxni-025", "--out-dir", "results/metaheuristica/tabu/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "solver": null, "use_meta": true, "config_id": "A2_maxni-025", "out_dir": "results/metaheuristica/tabu/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 25, "max_iter": 1000, "diversify_freq": 50, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.metaheuristic_phase", "data": {"method": "tabu", "count": 10}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 1, "config_id": "A2_maxni-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 25, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 1, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-025", "seed": 0, "initial_solution": 450.0, "final_solution": 455.0, "time_ms": 37.17039999901317}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-025", "seed": 1, "initial_solution": 444.0, "final_solution": 468.0, "time_ms": 63.61779999861028}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-025", "seed": 2, "initial_solution": 442.0, "final_solution": 457.0, "time_ms": 38.439700001617894}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-025", "seed": 3, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 27.464600003440864}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-025", "seed": 4, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 31.630600002245046}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 1, "config_id": "A2_maxni-025", "best_initial": 472.0, "best_final": 472.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 2, "config_id": "A2_maxni-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 25, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 2, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-025", "seed": 0, "initial_solution": 440.0, "final_solution": 473.0, "time_ms": 55.39180000050692}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-025", "seed": 1, "initial_solution": 454.0, "final_solution": 455.0, "time_ms": 31.66330000385642}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-025", "seed": 2, "initial_solution": 451.0, "final_solution": 463.0, "time_ms": 34.028400004899595}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-025", "seed": 3, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 42.45489999448182}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-025", "seed": 4, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 41.59030000300845}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 2, "config_id": "A2_maxni-025", "best_initial": 440.0, "best_final": 473.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 3, "config_id": "A2_maxni-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 25, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 3, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-025", "seed": 0, "initial_solution": 432.0, "final_solution": 457.0, "time_ms": 39.96429999824613}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-025", "seed": 1, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 45.58859999815468}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-025", "seed": 2, "initial_solution": 453.0, "final_solution": 457.0, "time_ms": 27.921300003072247}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-025", "seed": 3, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 53.07660000107717}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-025", "seed": 4, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 51.371800000197254}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 3, "config_id": "A2_maxni-025", "best_initial": 451.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 4, "config_id": "A2_maxni-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 25, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 4, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-025", "seed": 0, "initial_solution": 455.0, "final_solution": 455.0, "time_ms": 28.863599996839184}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-025", "seed": 1, "initial_solution": 444.0, "final_solution": 453.0, "time_ms": 30.775200000789482}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-025", "seed": 2, "initial_solution": 443.0, "final_solution": 468.0, "time_ms": 42.1210999993491}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-025", "seed": 3, "initial_solution": 444.0, "final_solution": 453.0, "time_ms": 29.988299997057766}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-025", "seed": 4, "initial_solution": 444.0, "final_solution": 453.0, "time_ms": 30.57750000152737}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 4, "config_id": "A2_maxni-025", "best_initial": 443.0, "best_final": 468.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 5, "config_id": "A2_maxni-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 25, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 5, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-025", "seed": 0, "initial_solution": 444.0, "final_solution": 474.0, "time_ms": 40.1482000015676}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-025", "seed": 1, "initial_solution": 454.0, "final_solution": 464.0, "time_ms": 42.98439999547554}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-025", "seed": 2, "initial_solution": 461.0, "final_solution": 473.0, "time_ms": 37.4286000005668}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-025", "seed": 3, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 41.930500003218185}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-025", "seed": 4, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 46.10049999610055}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 5, "config_id": "A2_maxni-025", "best_initial": 444.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 6, "config_id": "A2_maxni-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 25, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 6, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-025", "seed": 0, "initial_solution": 698.0, "final_solution": 702.0, "time_ms": 44.54540000006091}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-025", "seed": 1, "initial_solution": 699.0, "final_solution": 704.0, "time_ms": 55.82290000165813}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-025", "seed": 2, "initial_solution": 698.0, "final_solution": 714.0, "time_ms": 66.09179999941261}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-025", "seed": 3, "initial_solution": 683.0, "final_solution": 698.0, "time_ms": 53.58749999868451}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-025", "seed": 4, "initial_solution": 683.0, "final_solution": 698.0, "time_ms": 54.794800002127886}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 6, "config_id": "A2_maxni-025", "best_initial": 698.0, "best_final": 714.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 7, "config_id": "A2_maxni-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 25, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 7, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-025", "seed": 0, "initial_solution": 692.0, "final_solution": 713.0, "time_ms": 67.98679999337764}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-025", "seed": 1, "initial_solution": 694.0, "final_solution": 724.0, "time_ms": 57.50930000067456}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-025", "seed": 2, "initial_solution": 697.0, "final_solution": 716.0, "time_ms": 92.81339999870397}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-025", "seed": 3, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 69.70649999857415}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-025", "seed": 4, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 73.64599999709753}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 7, "config_id": "A2_maxni-025", "best_initial": 694.0, "best_final": 724.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 8, "config_id": "A2_maxni-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 25, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-025", "seed": 0, "initial_solution": 706.0, "final_solution": 720.0, "time_ms": 45.206400005554315}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-025", "seed": 1, "initial_solution": 692.0, "final_solution": 732.0, "time_ms": 46.602400005212985}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-025", "seed": 2, "initial_solution": 672.0, "final_solution": 728.0, "time_ms": 55.67270000028657}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-025", "seed": 3, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 77.84299999912037}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-025", "seed": 4, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 79.82089999859454}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 8, "config_id": "A2_maxni-025", "best_initial": 692.0, "best_final": 732.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 9, "config_id": "A2_maxni-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 25, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-025", "seed": 0, "initial_solution": 713.0, "final_solution": 716.0, "time_ms": 44.30470000079367}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-025", "seed": 1, "initial_solution": 703.0, "final_solution": 706.0, "time_ms": 40.51669999898877}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-025", "seed": 2, "initial_solution": 684.0, "final_solution": 698.0, "time_ms": 69.16400000045542}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-025", "seed": 3, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 60.90530000074068}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-025", "seed": 4, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 61.09979999746429}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 9, "config_id": "A2_maxni-025", "best_initial": 713.0, "best_final": 716.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 10, "config_id": "A2_maxni-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 25, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-025", "seed": 0, "initial_solution": 689.0, "final_solution": 697.0, "time_ms": 41.190200005075894}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-025", "seed": 1, "initial_solution": 705.0, "final_solution": 716.0, "time_ms": 43.64950000308454}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-025", "seed": 2, "initial_solution": 689.0, "final_solution": 689.0, "time_ms": 39.15189999679569}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-025", "seed": 3, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 66.3021000000299}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-025", "seed": 4, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 69.0381000022171}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 10, "config_id": "A2_maxni-025", "best_initial": 705.0, "best_final": 716.0}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["all", "--tabu", "--max-no-improve", "50", "--config-id", "A2_maxni-050", "--out-dir", "results/metaheuristica/tabu/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "solver": null, "use_meta": true, "config_id": "A2_maxni-050", "out_dir": "results/metaheuristica/tabu/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 50, "max_iter": 1000, "diversify_freq": 50, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.metaheuristic_phase", "data": {"method": "tabu", "count": 10}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 1, "config_id": "A2_maxni-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 50, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 1, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-050", "seed": 0, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 88.09330000076443}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-050", "seed": 1, "initial_solution": 444.0, "final_solution": 472.0, "time_ms": 96.72529999807011}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-050", "seed": 2, "initial_solution": 442.0, "final_solution": 460.0, "time_ms": 89.4004000001587}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-050", "seed": 3, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 44.43329999776324}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-050", "seed": 4, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 41.81839999364456}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 1, "config_id": "A2_maxni-050", "best_initial": 444.0, "best_final": 472.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 2, "config_id": "A2_maxni-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 50, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 2, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-050", "seed": 0, "initial_solution": 440.0, "final_solution": 473.0, "time_ms": 60.24060000345344}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-050", "seed": 1, "initial_solution": 454.0, "final_solution": 455.0, "time_ms": 46.344199996383395}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-050", "seed": 2, "initial_solution": 451.0, "final_solution": 463.0, "time_ms": 47.333100003015716}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-050", "seed": 3, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 54.07940000441158}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-050", "seed": 4, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 53.34679999941727}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 2, "config_id": "A2_maxni-050", "best_initial": 440.0, "best_final": 473.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 3, "config_id": "A2_maxni-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 50, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 3, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-050", "seed": 0, "initial_solution": 432.0, "final_solution": 459.0, "time_ms": 78.59360000293236}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-050", "seed": 1, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 56.73669999669073}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-050", "seed": 2, "initial_solution": 453.0, "final_solution": 459.0, "time_ms": 71.99889999901643}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-050", "seed": 3, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 59.95999999868218}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-050", "seed": 4, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 62.36420000641374}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 3, "config_id": "A2_maxni-050", "best_initial": 451.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 4, "config_id": "A2_maxni-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 50, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 4, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-050", "seed": 0, "initial_solution": 455.0, "final_solution": 456.0, "time_ms": 75.52969999960624}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-050", "seed": 1, "initial_solution": 444.0, "final_solution": 453.0, "time_ms": 44.62410000269301}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-050", "seed": 2, "initial_solution": 443.0, "final_solution": 470.0, "time_ms": 88.38639999885345}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-050", "seed": 3, "initial_solution": 444.0, "final_solution": 466.0, "time_ms": 74.44419999956153}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-050", "seed": 4, "initial_solution": 444.0, "final_solution": 466.0, "time_ms": 73.30910000018775}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 4, "config_id": "A2_maxni-050", "best_initial": 443.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 5, "config_id": "A2_maxni-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 50, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 5, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-050", "seed": 0, "initial_solution": 444.0, "final_solution": 474.0, "time_ms": 50.43709999881685}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-050", "seed": 1, "initial_solution": 454.0, "final_solution": 464.0, "time_ms": 61.533699998108204}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-050", "seed": 2, "initial_solution": 461.0, "final_solution": 474.0, "time_ms": 89.65449999959674}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-050", "seed": 3, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 61.99590000323951}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-050", "seed": 4, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 61.81280000600964}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 5, "config_id": "A2_maxni-050", "best_initial": 444.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 6, "config_id": "A2_maxni-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 50, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 6, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-050", "seed": 0, "initial_solution": 698.0, "final_solution": 718.0, "time_ms": 147.6131000017631}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-050", "seed": 1, "initial_solution": 699.0, "final_solution": 704.0, "time_ms": 91.2839000011445}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-050", "seed": 2, "initial_solution": 698.0, "final_solution": 714.0, "time_ms": 97.96730000380194}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-050", "seed": 3, "initial_solution": 683.0, "final_solution": 698.0, "time_ms": 88.55700000276556}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-050", "seed": 4, "initial_solution": 683.0, "final_solution": 698.0, "time_ms": 90.0850999969407}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 6, "config_id": "A2_maxni-050", "best_initial": 698.0, "best_final": 718.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 7, "config_id": "A2_maxni-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 50, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 7, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-050", "seed": 0, "initial_solution": 692.0, "final_solution": 716.0, "time_ms": 179.26439999428112}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-050", "seed": 1, "initial_solution": 694.0, "final_solution": 724.0, "time_ms": 93.59009999752743}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-050", "seed": 2, "initial_solution": 697.0, "final_solution": 716.0, "time_ms": 128.0687999969814}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-050", "seed": 3, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 107.16909999609925}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-050", "seed": 4, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 108.03599999781}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 7, "config_id": "A2_maxni-050", "best_initial": 694.0, "best_final": 724.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 8, "config_id": "A2_maxni-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 50, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-050", "seed": 0, "initial_solution": 706.0, "final_solution": 720.0, "time_ms": 81.68860000296263}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-050", "seed": 1, "initial_solution": 692.0, "final_solution": 732.0, "time_ms": 81.94820000062464}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-050", "seed": 2, "initial_solution": 672.0, "final_solution": 728.0, "time_ms": 92.16680000099586}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-050", "seed": 3, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 113.0974999978207}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-050", "seed": 4, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 117.24459999823011}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 8, "config_id": "A2_maxni-050", "best_initial": 692.0, "best_final": 732.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 9, "config_id": "A2_maxni-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 50, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-050", "seed": 0, "initial_solution": 713.0, "final_solution": 717.0, "time_ms": 179.67599999974482}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-050", "seed": 1, "initial_solution": 703.0, "final_solution": 706.0, "time_ms": 77.2817999968538}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-050", "seed": 2, "initial_solution": 684.0, "final_solution": 698.0, "time_ms": 105.07760000473354}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-050", "seed": 3, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 97.77659999963362}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-050", "seed": 4, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 98.291700000118}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 9, "config_id": "A2_maxni-050", "best_initial": 713.0, "best_final": 717.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 10, "config_id": "A2_maxni-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 50, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-050", "seed": 0, "initial_solution": 689.0, "final_solution": 699.0, "time_ms": 123.6473000026308}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-050", "seed": 1, "initial_solution": 705.0, "final_solution": 716.0, "time_ms": 81.58360000379616}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-050", "seed": 2, "initial_solution": 689.0, "final_solution": 689.0, "time_ms": 77.46639999822946}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-050", "seed": 3, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 101.37670000403887}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-050", "seed": 4, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 104.71949999919161}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 10, "config_id": "A2_maxni-050", "best_initial": 705.0, "best_final": 716.0}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["all", "--tabu", "--max-no-improve", "100", "--config-id", "A2_maxni-100", "--out-dir", "results/metaheuristica/tabu/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "solver": null, "use_meta": true, "config_id": "A2_maxni-100", "out_dir": "results/metaheuristica/tabu/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.metaheuristic_phase", "data": {"method": "tabu", "count": 10}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 1, "config_id": "A2_maxni-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 1, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-100", "seed": 0, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 126.73280000308296}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-100", "seed": 1, "initial_solution": 444.0, "final_solution": 472.0, "time_ms": 141.29749999847263}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-100", "seed": 2, "initial_solution": 442.0, "final_solution": 460.0, "time_ms": 127.01409999863245}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-100", "seed": 3, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 84.01690000027884}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-100", "seed": 4, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 83.5462999966694}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 1, "config_id": "A2_maxni-100", "best_initial": 444.0, "best_final": 472.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 2, "config_id": "A2_maxni-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 2, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-100", "seed": 0, "initial_solution": 440.0, "final_solution": 474.0, "time_ms": 151.37479999975767}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-100", "seed": 1, "initial_solution": 454.0, "final_solution": 473.0, "time_ms": 131.48419999924954}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-100", "seed": 2, "initial_solution": 451.0, "final_solution": 463.0, "time_ms": 88.0987999989884}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-100", "seed": 3, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 93.81669999856967}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-100", "seed": 4, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 94.03890000248794}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 2, "config_id": "A2_maxni-100", "best_initial": 440.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 3, "config_id": "A2_maxni-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 3, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-100", "seed": 0, "initial_solution": 432.0, "final_solution": 459.0, "time_ms": 119.61220000375761}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-100", "seed": 1, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 97.9592000003322}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-100", "seed": 2, "initial_solution": 453.0, "final_solution": 459.0, "time_ms": 110.84990000381367}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-100", "seed": 3, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 105.6689999968512}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-100", "seed": 4, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 102.0183000000543}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 3, "config_id": "A2_maxni-100", "best_initial": 451.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 4, "config_id": "A2_maxni-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 4, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-100", "seed": 0, "initial_solution": 455.0, "final_solution": 461.0, "time_ms": 235.23389999900246}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-100", "seed": 1, "initial_solution": 444.0, "final_solution": 469.0, "time_ms": 217.06019999692217}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-100", "seed": 2, "initial_solution": 443.0, "final_solution": 470.0, "time_ms": 129.57989999995334}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-100", "seed": 3, "initial_solution": 444.0, "final_solution": 466.0, "time_ms": 113.33010000089416}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-100", "seed": 4, "initial_solution": 444.0, "final_solution": 466.0, "time_ms": 118.76659999688854}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 4, "config_id": "A2_maxni-100", "best_initial": 443.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 5, "config_id": "A2_maxni-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 5, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-100", "seed": 0, "initial_solution": 444.0, "final_solution": 474.0, "time_ms": 93.16240000043763}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-100", "seed": 1, "initial_solution": 454.0, "final_solution": 464.0, "time_ms": 108.51509999338305}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-100", "seed": 2, "initial_solution": 461.0, "final_solution": 474.0, "time_ms": 131.58470000053057}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-100", "seed": 3, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 102.54759999952512}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-100", "seed": 4, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 108.82900000433438}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 5, "config_id": "A2_maxni-100", "best_initial": 444.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 6, "config_id": "A2_maxni-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 6, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-100", "seed": 0, "initial_solution": 698.0, "final_solution": 718.0, "time_ms": 225.50860000046669}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-100", "seed": 1, "initial_solution": 699.0, "final_solution": 704.0, "time_ms": 173.48589999892283}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-100", "seed": 2, "initial_solution": 698.0, "final_solution": 714.0, "time_ms": 176.63709999760613}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-100", "seed": 3, "initial_solution": 683.0, "final_solution": 700.0, "time_ms": 252.46669999614824}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-100", "seed": 4, "initial_solution": 683.0, "final_solution": 700.0, "time_ms": 251.75469999521738}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 6, "config_id": "A2_maxni-100", "best_initial": 698.0, "best_final": 718.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 7, "config_id": "A2_maxni-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 7, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-100", "seed": 0, "initial_solution": 692.0, "final_solution": 716.0, "time_ms": 259.13450000371085}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-100", "seed": 1, "initial_solution": 694.0, "final_solution": 724.0, "time_ms": 174.08180000347784}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-100", "seed": 2, "initial_solution": 697.0, "final_solution": 716.0, "time_ms": 209.96110000123736}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-100", "seed": 3, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 193.672700006573}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-100", "seed": 4, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 186.7832999996608}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 7, "config_id": "A2_maxni-100", "best_initial": 694.0, "best_final": 724.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 8, "config_id": "A2_maxni-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-100", "seed": 0, "initial_solution": 706.0, "final_solution": 720.0, "time_ms": 155.6323999975575}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-100", "seed": 1, "initial_solution": 692.0, "final_solution": 732.0, "time_ms": 158.68770000088261}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-100", "seed": 2, "initial_solution": 672.0, "final_solution": 728.0, "time_ms": 167.66130000178237}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-100", "seed": 3, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 191.35559999995166}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-100", "seed": 4, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 189.6409000037238}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 8, "config_id": "A2_maxni-100", "best_initial": 692.0, "best_final": 732.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 9, "config_id": "A2_maxni-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-100", "seed": 0, "initial_solution": 713.0, "final_solution": 717.0, "time_ms": 213.2555999996839}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-100", "seed": 1, "initial_solution": 703.0, "final_solution": 706.0, "time_ms": 155.30330000183312}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-100", "seed": 2, "initial_solution": 684.0, "final_solution": 698.0, "time_ms": 177.16079999809153}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-100", "seed": 3, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 171.65640000166604}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-100", "seed": 4, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 176.2908000018797}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 9, "config_id": "A2_maxni-100", "best_initial": 713.0, "best_final": 717.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 10, "config_id": "A2_maxni-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-100", "seed": 0, "initial_solution": 689.0, "final_solution": 699.0, "time_ms": 203.21839999814983}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-100", "seed": 1, "initial_solution": 705.0, "final_solution": 716.0, "time_ms": 154.50530000089202}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-100", "seed": 2, "initial_solution": 689.0, "final_solution": 697.0, "time_ms": 374.66180000046734}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-100", "seed": 3, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 180.49519999476615}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-100", "seed": 4, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 183.7775000021793}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 10, "config_id": "A2_maxni-100", "best_initial": 705.0, "best_final": 716.0}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["all", "--tabu", "--max-no-improve", "200", "--config-id", "A2_maxni-200", "--out-dir", "results/metaheuristica/tabu/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "solver": null, "use_meta": true, "config_id": "A2_maxni-200", "out_dir": "results/metaheuristica/tabu/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 200, "max_iter": 1000, "diversify_freq": 50, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.metaheuristic_phase", "data": {"method": "tabu", "count": 10}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 1, "config_id": "A2_maxni-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 200, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 1, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-200", "seed": 0, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 209.30390000285115}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-200", "seed": 1, "initial_solution": 444.0, "final_solution": 472.0, "time_ms": 220.5383999971673}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-200", "seed": 2, "initial_solution": 442.0, "final_solution": 472.0, "time_ms": 390.9170999977505}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-200", "seed": 3, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 169.1592999995919}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-200", "seed": 4, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 168.75590000563534}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 1, "config_id": "A2_maxni-200", "best_initial": 444.0, "best_final": 472.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 2, "config_id": "A2_maxni-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 200, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 2, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-200", "seed": 0, "initial_solution": 440.0, "final_solution": 474.0, "time_ms": 242.1570000005886}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-200", "seed": 1, "initial_solution": 454.0, "final_solution": 474.0, "time_ms": 356.27170000225306}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-200", "seed": 2, "initial_solution": 451.0, "final_solution": 474.0, "time_ms": 354.53419999976177}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-200", "seed": 3, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 175.9368999992148}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-200", "seed": 4, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 179.74490000051446}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 2, "config_id": "A2_maxni-200", "best_initial": 440.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 3, "config_id": "A2_maxni-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 200, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 3, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-200", "seed": 0, "initial_solution": 432.0, "final_solution": 459.0, "time_ms": 209.4409999990603}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-200", "seed": 1, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 182.01679999765474}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-200", "seed": 2, "initial_solution": 453.0, "final_solution": 459.0, "time_ms": 196.94790000357898}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-200", "seed": 3, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 186.76720000075875}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-200", "seed": 4, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 193.6416000025929}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 3, "config_id": "A2_maxni-200", "best_initial": 451.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 4, "config_id": "A2_maxni-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 200, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 4, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-200", "seed": 0, "initial_solution": 455.0, "final_solution": 461.0, "time_ms": 321.65320000058273}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-200", "seed": 1, "initial_solution": 444.0, "final_solution": 469.0, "time_ms": 304.0906000023824}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-200", "seed": 2, "initial_solution": 443.0, "final_solution": 470.0, "time_ms": 214.81299999868497}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-200", "seed": 3, "initial_solution": 444.0, "final_solution": 466.0, "time_ms": 196.64519999787444}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-200", "seed": 4, "initial_solution": 444.0, "final_solution": 466.0, "time_ms": 199.35920000716578}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 4, "config_id": "A2_maxni-200", "best_initial": 443.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 5, "config_id": "A2_maxni-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 200, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 5, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-200", "seed": 0, "initial_solution": 444.0, "final_solution": 474.0, "time_ms": 176.38199999782955}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-200", "seed": 1, "initial_solution": 454.0, "final_solution": 474.0, "time_ms": 404.5459999979357}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-200", "seed": 2, "initial_solution": 461.0, "final_solution": 474.0, "time_ms": 221.80179999850225}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-200", "seed": 3, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 188.1548000019393}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-200", "seed": 4, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 190.043999995396}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 5, "config_id": "A2_maxni-200", "best_initial": 444.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 6, "config_id": "A2_maxni-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 200, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 6, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-200", "seed": 0, "initial_solution": 698.0, "final_solution": 718.0, "time_ms": 379.1357000009157}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-200", "seed": 1, "initial_solution": 699.0, "final_solution": 719.0, "time_ms": 787.4826999977813}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-200", "seed": 2, "initial_solution": 698.0, "final_solution": 714.0, "time_ms": 329.91719999699853}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-200", "seed": 3, "initial_solution": 683.0, "final_solution": 700.0, "time_ms": 406.524799996987}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-200", "seed": 4, "initial_solution": 683.0, "final_solution": 700.0, "time_ms": 408.30609999829903}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 6, "config_id": "A2_maxni-200", "best_initial": 699.0, "best_final": 719.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 7, "config_id": "A2_maxni-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 200, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 7, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-200", "seed": 0, "initial_solution": 692.0, "final_solution": 716.0, "time_ms": 407.34990000055404}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-200", "seed": 1, "initial_solution": 694.0, "final_solution": 724.0, "time_ms": 328.0333000002429}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-200", "seed": 2, "initial_solution": 697.0, "final_solution": 716.0, "time_ms": 366.3684999992256}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-200", "seed": 3, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 414.34319999825675}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-200", "seed": 4, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 355.07979999965755}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 7, "config_id": "A2_maxni-200", "best_initial": 694.0, "best_final": 724.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 8, "config_id": "A2_maxni-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 200, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-200", "seed": 0, "initial_solution": 706.0, "final_solution": 720.0, "time_ms": 310.3883000003407}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-200", "seed": 1, "initial_solution": 692.0, "final_solution": 732.0, "time_ms": 317.66310000239173}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-200", "seed": 2, "initial_solution": 672.0, "final_solution": 728.0, "time_ms": 326.9058000005316}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-200", "seed": 3, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 349.4012000010116}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-200", "seed": 4, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 357.36329999781447}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 8, "config_id": "A2_maxni-200", "best_initial": 692.0, "best_final": 732.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 9, "config_id": "A2_maxni-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 200, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-200", "seed": 0, "initial_solution": 713.0, "final_solution": 717.0, "time_ms": 381.14240000140853}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-200", "seed": 1, "initial_solution": 703.0, "final_solution": 717.0, "time_ms": 674.3592999991961}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-200", "seed": 2, "initial_solution": 684.0, "final_solution": 700.0, "time_ms": 592.9008000020985}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-200", "seed": 3, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 325.00789999903645}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-200", "seed": 4, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 342.09779999946477}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 9, "config_id": "A2_maxni-200", "best_initial": 713.0, "best_final": 717.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 10, "config_id": "A2_maxni-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 200, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-200", "seed": 0, "initial_solution": 689.0, "final_solution": 699.0, "time_ms": 374.2095999987214}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-200", "seed": 1, "initial_solution": 705.0, "final_solution": 716.0, "time_ms": 322.687699997914}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-200", "seed": 2, "initial_solution": 689.0, "final_solution": 697.0, "time_ms": 557.9867999986163}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-200", "seed": 3, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 337.21479999803705}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-200", "seed": 4, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 343.9840999999433}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 10, "config_id": "A2_maxni-200", "best_initial": 705.0, "best_final": 716.0}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["all", "--tabu", "--max-no-improve", "400", "--config-id", "A2_maxni-400", "--out-dir", "results/metaheuristica/tabu/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "solver": null, "use_meta": true, "config_id": "A2_maxni-400", "out_dir": "results/metaheuristica/tabu/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 400, "max_iter": 1000, "diversify_freq": 50, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.metaheuristic_phase", "data": {"method": "tabu", "count": 10}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 1, "config_id": "A2_maxni-400", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 400, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 1, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-400", "seed": 0, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 397.03390000067884}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-400", "seed": 1, "initial_solution": 444.0, "final_solution": 472.0, "time_ms": 388.22829999844544}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-400", "seed": 2, "initial_solution": 442.0, "final_solution": 472.0, "time_ms": 552.0002999983262}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-400", "seed": 3, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 337.9390999980387}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-400", "seed": 4, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 349.7676000042702}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 1, "config_id": "A2_maxni-400", "best_initial": 444.0, "best_final": 472.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 2, "config_id": "A2_maxni-400", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 400, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 2, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-400", "seed": 0, "initial_solution": 440.0, "final_solution": 474.0, "time_ms": 419.7901000006823}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-400", "seed": 1, "initial_solution": 454.0, "final_solution": 474.0, "time_ms": 527.1450000000186}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-400", "seed": 2, "initial_solution": 451.0, "final_solution": 474.0, "time_ms": 531.9856000060099}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-400", "seed": 3, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 354.755499996827}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-400", "seed": 4, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 358.9350000038394}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 2, "config_id": "A2_maxni-400", "best_initial": 440.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 3, "config_id": "A2_maxni-400", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 400, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 3, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-400", "seed": 0, "initial_solution": 432.0, "final_solution": 459.0, "time_ms": 373.5837999993237}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-400", "seed": 1, "initial_solution": 450.0, "final_solution": 470.0, "time_ms": 696.1365999959526}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-400", "seed": 2, "initial_solution": 453.0, "final_solution": 459.0, "time_ms": 366.9326000017463}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-400", "seed": 3, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 355.1117000024533}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-400", "seed": 4, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 359.96159999922384}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 3, "config_id": "A2_maxni-400", "best_initial": 450.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 4, "config_id": "A2_maxni-400", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 400, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 4, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-400", "seed": 0, "initial_solution": 455.0, "final_solution": 461.0, "time_ms": 498.18860000232235}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-400", "seed": 1, "initial_solution": 444.0, "final_solution": 469.0, "time_ms": 481.1026000024867}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-400", "seed": 2, "initial_solution": 443.0, "final_solution": 470.0, "time_ms": 392.4983000033535}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-400", "seed": 3, "initial_solution": 444.0, "final_solution": 470.0, "time_ms": 569.6779999998398}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-400", "seed": 4, "initial_solution": 444.0, "final_solution": 470.0, "time_ms": 548.0098000043654}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 4, "config_id": "A2_maxni-400", "best_initial": 443.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 5, "config_id": "A2_maxni-400", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 400, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 5, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-400", "seed": 0, "initial_solution": 444.0, "final_solution": 474.0, "time_ms": 347.82370000175433}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-400", "seed": 1, "initial_solution": 454.0, "final_solution": 474.0, "time_ms": 582.5836000003619}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-400", "seed": 2, "initial_solution": 461.0, "final_solution": 474.0, "time_ms": 392.0416999972076}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-400", "seed": 3, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 364.16040000040084}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-400", "seed": 4, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 355.9194000044954}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 5, "config_id": "A2_maxni-400", "best_initial": 444.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 6, "config_id": "A2_maxni-400", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 400, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 6, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-400", "seed": 0, "initial_solution": 698.0, "final_solution": 719.0, "time_ms": 1303.8664999985485}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-400", "seed": 1, "initial_solution": 699.0, "final_solution": 719.0, "time_ms": 1095.1206000027014}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-400", "seed": 2, "initial_solution": 698.0, "final_solution": 718.0, "time_ms": 1109.5002000001841}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-400", "seed": 3, "initial_solution": 683.0, "final_solution": 700.0, "time_ms": 709.8834999997052}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-400", "seed": 4, "initial_solution": 683.0, "final_solution": 718.0, "time_ms": 1220.5996999982744}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 6, "config_id": "A2_maxni-400", "best_initial": 698.0, "best_final": 719.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 7, "config_id": "A2_maxni-400", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 400, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 7, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-400", "seed": 0, "initial_solution": 692.0, "final_solution": 716.0, "time_ms": 720.7024000017554}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-400", "seed": 1, "initial_solution": 694.0, "final_solution": 724.0, "time_ms": 628.5886999976356}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-400", "seed": 2, "initial_solution": 697.0, "final_solution": 716.0, "time_ms": 681.6240999978618}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-400", "seed": 3, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 663.7335999985225}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-400", "seed": 4, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 640.4993000032846}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 7, "config_id": "A2_maxni-400", "best_initial": 694.0, "best_final": 724.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 8, "config_id": "A2_maxni-400", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 400, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-400", "seed": 0, "initial_solution": 706.0, "final_solution": 720.0, "time_ms": 622.1906999999192}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-400", "seed": 1, "initial_solution": 692.0, "final_solution": 732.0, "time_ms": 618.6099999977159}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-400", "seed": 2, "initial_solution": 672.0, "final_solution": 728.0, "time_ms": 648.5342000014498}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-400", "seed": 3, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 654.4830999991973}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-400", "seed": 4, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 657.6104999985546}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 8, "config_id": "A2_maxni-400", "best_initial": 692.0, "best_final": 732.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 9, "config_id": "A2_maxni-400", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 400, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-400", "seed": 0, "initial_solution": 713.0, "final_solution": 717.0, "time_ms": 669.5824999987963}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-400", "seed": 1, "initial_solution": 703.0, "final_solution": 717.0, "time_ms": 976.2514999965788}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-400", "seed": 2, "initial_solution": 684.0, "final_solution": 700.0, "time_ms": 887.0760999998311}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-400", "seed": 3, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 640.0705000050948}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-400", "seed": 4, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 636.8736000003992}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 9, "config_id": "A2_maxni-400", "best_initial": 713.0, "best_final": 717.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 10, "config_id": "A2_maxni-400", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 400, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-400", "seed": 0, "initial_solution": 689.0, "final_solution": 700.0, "time_ms": 1032.170499995118}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-400", "seed": 1, "initial_solution": 705.0, "final_solution": 716.0, "time_ms": 648.1124999991152}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-400", "seed": 2, "initial_solution": 689.0, "final_solution": 697.0, "time_ms": 857.8696999975364}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-400", "seed": 3, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 655.2546000020811}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-400", "seed": 4, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 658.6621999958879}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 10, "config_id": "A2_maxni-400", "best_initial": 705.0, "best_final": 716.0}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["all", "--tabu", "--max-no-improve", "800", "--config-id", "A2_maxni-800", "--out-dir", "results/metaheuristica/tabu/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "solver": null, "use_meta": true, "config_id": "A2_maxni-800", "out_dir": "results/metaheuristica/tabu/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 800, "max_iter": 1000, "diversify_freq": 50, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.metaheuristic_phase", "data": {"method": "tabu", "count": 10}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 1, "config_id": "A2_maxni-800", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 800, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 1, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-800", "seed": 0, "initial_solution": 450.0, "final_solution": 465.0, "time_ms": 835.9837000025436}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-800", "seed": 1, "initial_solution": 444.0, "final_solution": 472.0, "time_ms": 760.6476000000839}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-800", "seed": 2, "initial_solution": 442.0, "final_solution": 472.0, "time_ms": 844.0665000016452}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-800", "seed": 3, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 692.380200001935}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A2_maxni-800", "seed": 4, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 679.9048999964725}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 1, "config_id": "A2_maxni-800", "best_initial": 444.0, "best_final": 472.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 2, "config_id": "A2_maxni-800", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 800, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 2, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-800", "seed": 0, "initial_solution": 440.0, "final_solution": 474.0, "time_ms": 768.7549999973271}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-800", "seed": 1, "initial_solution": 454.0, "final_solution": 474.0, "time_ms": 835.8570999989752}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-800", "seed": 2, "initial_solution": 451.0, "final_solution": 474.0, "time_ms": 836.5214000004926}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-800", "seed": 3, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 701.233299994783}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A2_maxni-800", "seed": 4, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 701.3664999976754}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 2, "config_id": "A2_maxni-800", "best_initial": 440.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 3, "config_id": "A2_maxni-800", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 800, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 3, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-800", "seed": 0, "initial_solution": 432.0, "final_solution": 459.0, "time_ms": 720.6311000045389}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-800", "seed": 1, "initial_solution": 450.0, "final_solution": 470.0, "time_ms": 848.0351999969571}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-800", "seed": 2, "initial_solution": 453.0, "final_solution": 459.0, "time_ms": 708.9641999991727}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-800", "seed": 3, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 703.2596999997622}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A2_maxni-800", "seed": 4, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 692.1376000027522}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 3, "config_id": "A2_maxni-800", "best_initial": 450.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 4, "config_id": "A2_maxni-800", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 800, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 4, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-800", "seed": 0, "initial_solution": 455.0, "final_solution": 461.0, "time_ms": 825.3288999985671}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-800", "seed": 1, "initial_solution": 444.0, "final_solution": 469.0, "time_ms": 806.0782999964431}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-800", "seed": 2, "initial_solution": 443.0, "final_solution": 470.0, "time_ms": 723.7270000041462}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-800", "seed": 3, "initial_solution": 444.0, "final_solution": 470.0, "time_ms": 846.3560000018333}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A2_maxni-800", "seed": 4, "initial_solution": 444.0, "final_solution": 470.0, "time_ms": 818.3630000057747}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 4, "config_id": "A2_maxni-800", "best_initial": 443.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 5, "config_id": "A2_maxni-800", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 800, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 5, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-800", "seed": 0, "initial_solution": 444.0, "final_solution": 474.0, "time_ms": 685.1536000031047}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-800", "seed": 1, "initial_solution": 454.0, "final_solution": 474.0, "time_ms": 830.8840000026976}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-800", "seed": 2, "initial_solution": 461.0, "final_solution": 474.0, "time_ms": 744.7364999970887}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-800", "seed": 3, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 697.8906000003917}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A2_maxni-800", "seed": 4, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 693.342799997481}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 5, "config_id": "A2_maxni-800", "best_initial": 444.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 6, "config_id": "A2_maxni-800", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 800, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 6, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-800", "seed": 0, "initial_solution": 698.0, "final_solution": 719.0, "time_ms": 1571.4617999983602}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-800", "seed": 1, "initial_solution": 699.0, "final_solution": 719.0, "time_ms": 1486.7217999999411}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-800", "seed": 2, "initial_solution": 698.0, "final_solution": 718.0, "time_ms": 1519.9998999960371}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-800", "seed": 3, "initial_solution": 683.0, "final_solution": 700.0, "time_ms": 1327.6474000012968}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A2_maxni-800", "seed": 4, "initial_solution": 683.0, "final_solution": 718.0, "time_ms": 1534.8315000010189}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 6, "config_id": "A2_maxni-800", "best_initial": 698.0, "best_final": 719.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 7, "config_id": "A2_maxni-800", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 800, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 7, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-800", "seed": 0, "initial_solution": 692.0, "final_solution": 716.0, "time_ms": 1346.21049999987}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-800", "seed": 1, "initial_solution": 694.0, "final_solution": 724.0, "time_ms": 1238.497099999222}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-800", "seed": 2, "initial_solution": 697.0, "final_solution": 716.0, "time_ms": 1311.216300004162}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-800", "seed": 3, "initial_solution": 701.0, "final_solution": 716.0, "time_ms": 1515.2181000012206}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A2_maxni-800", "seed": 4, "initial_solution": 701.0, "final_solution": 716.0, "time_ms": 1553.0724999989616}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 7, "config_id": "A2_maxni-800", "best_initial": 694.0, "best_final": 724.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 8, "config_id": "A2_maxni-800", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 800, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-800", "seed": 0, "initial_solution": 706.0, "final_solution": 720.0, "time_ms": 1263.1657999954768}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-800", "seed": 1, "initial_solution": 692.0, "final_solution": 732.0, "time_ms": 1243.2503000018187}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-800", "seed": 2, "initial_solution": 672.0, "final_solution": 728.0, "time_ms": 1277.4494999976014}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-800", "seed": 3, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 1286.9071000022814}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A2_maxni-800", "seed": 4, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 1292.8413999979966}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 8, "config_id": "A2_maxni-800", "best_initial": 692.0, "best_final": 732.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 9, "config_id": "A2_maxni-800", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 800, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-800", "seed": 0, "initial_solution": 713.0, "final_solution": 717.0, "time_ms": 1326.7565999994986}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-800", "seed": 1, "initial_solution": 703.0, "final_solution": 717.0, "time_ms": 1544.1256999984034}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-800", "seed": 2, "initial_solution": 684.0, "final_solution": 700.0, "time_ms": 1539.737300001434}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-800", "seed": 3, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 1276.121199996851}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A2_maxni-800", "seed": 4, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 1272.4524000004749}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 9, "config_id": "A2_maxni-800", "best_initial": 713.0, "best_final": 717.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 10, "config_id": "A2_maxni-800", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 800, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-800", "seed": 0, "initial_solution": 689.0, "final_solution": 700.0, "time_ms": 1545.9486999970977}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-800", "seed": 1, "initial_solution": 705.0, "final_solution": 716.0, "time_ms": 1263.533199999074}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-800", "seed": 2, "initial_solution": 689.0, "final_solution": 721.0, "time_ms": 1526.8224000028567}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-800", "seed": 3, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 1293.8360000043758}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A2_maxni-800", "seed": 4, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 1290.7254999954603}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 10, "config_id": "A2_maxni-800", "best_initial": 689.0, "best_final": 721.0}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["all", "--tabu", "--diversify-freq", "0", "--config-id", "A4_divfreq-000", "--out-dir", "results/metaheuristica/tabu/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "solver": null, "use_meta": true, "config_id": "A4_divfreq-000", "out_dir": "results/metaheuristica/tabu/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 0, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.metaheuristic_phase", "data": {"method": "tabu", "count": 10}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 1, "config_id": "A4_divfreq-000", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 0, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 1, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-000", "seed": 0, "initial_solution": 450.0, "final_solution": 472.0, "time_ms": 162.70739999890793}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-000", "seed": 1, "initial_solution": 444.0, "final_solution": 468.0, "time_ms": 112.83559999719728}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-000", "seed": 2, "initial_solution": 442.0, "final_solution": 465.0, "time_ms": 139.9329000050784}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-000", "seed": 3, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 85.11379999981727}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-000", "seed": 4, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 87.86020000115968}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 1, "config_id": "A4_divfreq-000", "best_initial": 450.0, "best_final": 472.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 2, "config_id": "A4_divfreq-000", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 0, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 2, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-000", "seed": 0, "initial_solution": 440.0, "final_solution": 473.0, "time_ms": 108.73780000110855}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-000", "seed": 1, "initial_solution": 454.0, "final_solution": 474.0, "time_ms": 200.23389999551}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-000", "seed": 2, "initial_solution": 451.0, "final_solution": 463.0, "time_ms": 98.91780000180006}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-000", "seed": 3, "initial_solution": 441.0, "final_solution": 474.0, "time_ms": 186.55130000115605}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-000", "seed": 4, "initial_solution": 441.0, "final_solution": 474.0, "time_ms": 180.76579999615205}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 2, "config_id": "A4_divfreq-000", "best_initial": 454.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 3, "config_id": "A4_divfreq-000", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 0, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 3, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-000", "seed": 0, "initial_solution": 432.0, "final_solution": 459.0, "time_ms": 128.155099999276}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-000", "seed": 1, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 106.8239000014728}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-000", "seed": 2, "initial_solution": 453.0, "final_solution": 459.0, "time_ms": 117.7626999997301}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-000", "seed": 3, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 106.67220000323141}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-000", "seed": 4, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 107.62670000258368}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 3, "config_id": "A4_divfreq-000", "best_initial": 451.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 4, "config_id": "A4_divfreq-000", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 0, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 4, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-000", "seed": 0, "initial_solution": 455.0, "final_solution": 470.0, "time_ms": 181.85219999577384}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-000", "seed": 1, "initial_solution": 444.0, "final_solution": 453.0, "time_ms": 92.87849999964237}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-000", "seed": 2, "initial_solution": 443.0, "final_solution": 470.0, "time_ms": 151.40919999976177}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-000", "seed": 3, "initial_solution": 444.0, "final_solution": 466.0, "time_ms": 121.084599995811}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-000", "seed": 4, "initial_solution": 444.0, "final_solution": 466.0, "time_ms": 121.95600000268314}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 4, "config_id": "A4_divfreq-000", "best_initial": 455.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 5, "config_id": "A4_divfreq-000", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 0, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 5, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-000", "seed": 0, "initial_solution": 444.0, "final_solution": 474.0, "time_ms": 98.29600000375649}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-000", "seed": 1, "initial_solution": 454.0, "final_solution": 464.0, "time_ms": 108.94520000147168}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-000", "seed": 2, "initial_solution": 461.0, "final_solution": 474.0, "time_ms": 138.11620000342373}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-000", "seed": 3, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 111.09679999935906}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-000", "seed": 4, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 109.24619999423157}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 5, "config_id": "A4_divfreq-000", "best_initial": 444.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 6, "config_id": "A4_divfreq-000", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 0, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 6, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-000", "seed": 0, "initial_solution": 698.0, "final_solution": 718.0, "time_ms": 227.8444000039599}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-000", "seed": 1, "initial_solution": 699.0, "final_solution": 704.0, "time_ms": 178.78510000446113}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-000", "seed": 2, "initial_solution": 698.0, "final_solution": 719.0, "time_ms": 341.1139999952866}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-000", "seed": 3, "initial_solution": 683.0, "final_solution": 698.0, "time_ms": 176.29959999612765}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-000", "seed": 4, "initial_solution": 683.0, "final_solution": 698.0, "time_ms": 172.81410000578035}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 6, "config_id": "A4_divfreq-000", "best_initial": 698.0, "best_final": 719.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 7, "config_id": "A4_divfreq-000", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 0, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 7, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-000", "seed": 0, "initial_solution": 692.0, "final_solution": 716.0, "time_ms": 267.74139999906765}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-000", "seed": 1, "initial_solution": 694.0, "final_solution": 724.0, "time_ms": 177.79850000079023}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-000", "seed": 2, "initial_solution": 697.0, "final_solution": 716.0, "time_ms": 215.96040000440553}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-000", "seed": 3, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 194.75039999815635}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-000", "seed": 4, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 191.38650000240887}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 7, "config_id": "A4_divfreq-000", "best_initial": 694.0, "best_final": 724.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 8, "config_id": "A4_divfreq-000", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 0, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-000", "seed": 0, "initial_solution": 706.0, "final_solution": 720.0, "time_ms": 161.46220000518952}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-000", "seed": 1, "initial_solution": 692.0, "final_solution": 732.0, "time_ms": 165.31160000158707}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-000", "seed": 2, "initial_solution": 672.0, "final_solution": 728.0, "time_ms": 173.04750000039348}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-000", "seed": 3, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 196.5224000014132}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-000", "seed": 4, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 199.45529999677092}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 8, "config_id": "A4_divfreq-000", "best_initial": 692.0, "best_final": 732.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 9, "config_id": "A4_divfreq-000", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 0, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-000", "seed": 0, "initial_solution": 713.0, "final_solution": 717.0, "time_ms": 220.7263999953284}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-000", "seed": 1, "initial_solution": 703.0, "final_solution": 706.0, "time_ms": 162.95420000096783}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-000", "seed": 2, "initial_solution": 684.0, "final_solution": 698.0, "time_ms": 191.18840000010096}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-000", "seed": 3, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 178.54890000307932}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-000", "seed": 4, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 179.71530000068014}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 9, "config_id": "A4_divfreq-000", "best_initial": 713.0, "best_final": 717.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 10, "config_id": "A4_divfreq-000", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 0, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-000", "seed": 0, "initial_solution": 689.0, "final_solution": 699.0, "time_ms": 204.11479999893345}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-000", "seed": 1, "initial_solution": 705.0, "final_solution": 716.0, "time_ms": 160.9348999991198}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-000", "seed": 2, "initial_solution": 689.0, "final_solution": 689.0, "time_ms": 164.16300000128103}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-000", "seed": 3, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 187.84160000359407}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-000", "seed": 4, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 189.03759999375325}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 10, "config_id": "A4_divfreq-000", "best_initial": 705.0, "best_final": 716.0}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["all", "--tabu", "--diversify-freq", "10", "--config-id", "A4_divfreq-010", "--out-dir", "results/metaheuristica/tabu/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "solver": null, "use_meta": true, "config_id": "A4_divfreq-010", "out_dir": "results/metaheuristica/tabu/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 10, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.metaheuristic_phase", "data": {"method": "tabu", "count": 10}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 1, "config_id": "A4_divfreq-010", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 10, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 1, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-010", "seed": 0, "initial_solution": 450.0, "final_solution": 455.0, "time_ms": 92.98870000202442}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-010", "seed": 1, "initial_solution": 444.0, "final_solution": 464.0, "time_ms": 96.40789999684785}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-010", "seed": 2, "initial_solution": 442.0, "final_solution": 471.0, "time_ms": 134.66289999632863}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-010", "seed": 3, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 84.42189999914262}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-010", "seed": 4, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 84.49660000042059}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 1, "config_id": "A4_divfreq-010", "best_initial": 472.0, "best_final": 472.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 2, "config_id": "A4_divfreq-010", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 10, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 2, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-010", "seed": 0, "initial_solution": 440.0, "final_solution": 473.0, "time_ms": 105.13060000084806}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-010", "seed": 1, "initial_solution": 454.0, "final_solution": 474.0, "time_ms": 122.2226000027149}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-010", "seed": 2, "initial_solution": 451.0, "final_solution": 474.0, "time_ms": 129.4620999979088}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-010", "seed": 3, "initial_solution": 441.0, "final_solution": 474.0, "time_ms": 164.30319999926724}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-010", "seed": 4, "initial_solution": 441.0, "final_solution": 474.0, "time_ms": 189.5818999983021}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 2, "config_id": "A4_divfreq-010", "best_initial": 454.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 3, "config_id": "A4_divfreq-010", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 10, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 3, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-010", "seed": 0, "initial_solution": 432.0, "final_solution": 468.0, "time_ms": 139.2457000038121}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-010", "seed": 1, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 104.66330000053858}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-010", "seed": 2, "initial_solution": 453.0, "final_solution": 468.0, "time_ms": 131.03810000029625}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-010", "seed": 3, "initial_solution": 451.0, "final_solution": 468.0, "time_ms": 93.85000000474975}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-010", "seed": 4, "initial_solution": 451.0, "final_solution": 468.0, "time_ms": 93.19719999621157}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 3, "config_id": "A4_divfreq-010", "best_initial": 432.0, "best_final": 468.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 4, "config_id": "A4_divfreq-010", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 10, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 4, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-010", "seed": 0, "initial_solution": 455.0, "final_solution": 470.0, "time_ms": 180.47650000517024}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-010", "seed": 1, "initial_solution": 444.0, "final_solution": 465.0, "time_ms": 128.6681999990833}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-010", "seed": 2, "initial_solution": 443.0, "final_solution": 469.0, "time_ms": 129.1027999977814}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-010", "seed": 3, "initial_solution": 444.0, "final_solution": 469.0, "time_ms": 158.3798999999999}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-010", "seed": 4, "initial_solution": 444.0, "final_solution": 460.0, "time_ms": 155.1121000011335}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 4, "config_id": "A4_divfreq-010", "best_initial": 455.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 5, "config_id": "A4_divfreq-010", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 10, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 5, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-010", "seed": 0, "initial_solution": 444.0, "final_solution": 474.0, "time_ms": 94.72079999977723}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-010", "seed": 1, "initial_solution": 454.0, "final_solution": 468.0, "time_ms": 105.30709999875398}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-010", "seed": 2, "initial_solution": 461.0, "final_solution": 473.0, "time_ms": 108.50449999998091}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-010", "seed": 3, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 106.41030000260798}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-010", "seed": 4, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 108.37950000131968}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 5, "config_id": "A4_divfreq-010", "best_initial": 444.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 6, "config_id": "A4_divfreq-010", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 10, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 6, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-010", "seed": 0, "initial_solution": 698.0, "final_solution": 719.0, "time_ms": 347.7414000008139}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-010", "seed": 1, "initial_solution": 699.0, "final_solution": 716.0, "time_ms": 227.02289999870118}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-010", "seed": 2, "initial_solution": 698.0, "final_solution": 719.0, "time_ms": 247.58910000673495}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-010", "seed": 3, "initial_solution": 683.0, "final_solution": 718.0, "time_ms": 243.19439999817405}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-010", "seed": 4, "initial_solution": 683.0, "final_solution": 718.0, "time_ms": 225.03149999829475}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 6, "config_id": "A4_divfreq-010", "best_initial": 698.0, "best_final": 719.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 7, "config_id": "A4_divfreq-010", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 10, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 7, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-010", "seed": 0, "initial_solution": 692.0, "final_solution": 716.0, "time_ms": 269.55699999962235}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-010", "seed": 1, "initial_solution": 694.0, "final_solution": 724.0, "time_ms": 181.50729999615578}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-010", "seed": 2, "initial_solution": 697.0, "final_solution": 716.0, "time_ms": 193.78219999634894}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-010", "seed": 3, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 212.23879999888595}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-010", "seed": 4, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 210.4847999944468}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 7, "config_id": "A4_divfreq-010", "best_initial": 694.0, "best_final": 724.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 8, "config_id": "A4_divfreq-010", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 10, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-010", "seed": 0, "initial_solution": 706.0, "final_solution": 720.0, "time_ms": 168.59110000223154}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-010", "seed": 1, "initial_solution": 692.0, "final_solution": 732.0, "time_ms": 164.6108999993885}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-010", "seed": 2, "initial_solution": 672.0, "final_solution": 728.0, "time_ms": 181.18369999865536}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-010", "seed": 3, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 196.68729999830248}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-010", "seed": 4, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 197.16030000563478}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 8, "config_id": "A4_divfreq-010", "best_initial": 692.0, "best_final": 732.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 9, "config_id": "A4_divfreq-010", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 10, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-010", "seed": 0, "initial_solution": 713.0, "final_solution": 716.0, "time_ms": 171.02239999803714}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-010", "seed": 1, "initial_solution": 703.0, "final_solution": 706.0, "time_ms": 161.05129999778}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-010", "seed": 2, "initial_solution": 684.0, "final_solution": 700.0, "time_ms": 220.06530000362545}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-010", "seed": 3, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 218.56560000014724}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-010", "seed": 4, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 206.5671999953338}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 9, "config_id": "A4_divfreq-010", "best_initial": 713.0, "best_final": 716.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 10, "config_id": "A4_divfreq-010", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 10, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-010", "seed": 0, "initial_solution": 689.0, "final_solution": 721.0, "time_ms": 249.89089999871794}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-010", "seed": 1, "initial_solution": 705.0, "final_solution": 716.0, "time_ms": 160.1693000047817}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-010", "seed": 2, "initial_solution": 689.0, "final_solution": 689.0, "time_ms": 156.66730000521056}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-010", "seed": 3, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 184.3905999994604}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-010", "seed": 4, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 191.13340000330936}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 10, "config_id": "A4_divfreq-010", "best_initial": 689.0, "best_final": 721.0}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["all", "--tabu", "--diversify-freq", "25", "--config-id", "A4_divfreq-025", "--out-dir", "results/metaheuristica/tabu/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "solver": null, "use_meta": true, "config_id": "A4_divfreq-025", "out_dir": "results/metaheuristica/tabu/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 25, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.metaheuristic_phase", "data": {"method": "tabu", "count": 10}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 1, "config_id": "A4_divfreq-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 25, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 1, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-025", "seed": 0, "initial_solution": 450.0, "final_solution": 455.0, "time_ms": 94.40670000185492}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-025", "seed": 1, "initial_solution": 444.0, "final_solution": 472.0, "time_ms": 120.33720000181347}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-025", "seed": 2, "initial_solution": 442.0, "final_solution": 468.0, "time_ms": 235.17379999975674}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-025", "seed": 3, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 83.82210000127088}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-025", "seed": 4, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 85.93480000126874}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 1, "config_id": "A4_divfreq-025", "best_initial": 444.0, "best_final": 472.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 2, "config_id": "A4_divfreq-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 25, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 2, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-025", "seed": 0, "initial_solution": 440.0, "final_solution": 473.0, "time_ms": 104.39019999466836}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-025", "seed": 1, "initial_solution": 454.0, "final_solution": 473.0, "time_ms": 171.63139999320265}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-025", "seed": 2, "initial_solution": 451.0, "final_solution": 463.0, "time_ms": 93.29799999977695}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-025", "seed": 3, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 95.84180000092601}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-025", "seed": 4, "initial_solution": 441.0, "final_solution": 474.0, "time_ms": 153.64060000138124}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 2, "config_id": "A4_divfreq-025", "best_initial": 441.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 3, "config_id": "A4_divfreq-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 25, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 3, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-025", "seed": 0, "initial_solution": 432.0, "final_solution": 468.0, "time_ms": 131.16689999878872}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-025", "seed": 1, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 101.01810000196565}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-025", "seed": 2, "initial_solution": 453.0, "final_solution": 459.0, "time_ms": 114.52389999612933}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-025", "seed": 3, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 104.21980000683106}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-025", "seed": 4, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 103.54929999448359}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 3, "config_id": "A4_divfreq-025", "best_initial": 451.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 4, "config_id": "A4_divfreq-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 25, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 4, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-025", "seed": 0, "initial_solution": 455.0, "final_solution": 470.0, "time_ms": 192.6166000048397}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-025", "seed": 1, "initial_solution": 444.0, "final_solution": 453.0, "time_ms": 88.49830000690417}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-025", "seed": 2, "initial_solution": 443.0, "final_solution": 470.0, "time_ms": 115.91890000272542}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-025", "seed": 3, "initial_solution": 444.0, "final_solution": 470.0, "time_ms": 132.94519999908516}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-025", "seed": 4, "initial_solution": 444.0, "final_solution": 470.0, "time_ms": 159.0649999998277}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 4, "config_id": "A4_divfreq-025", "best_initial": 455.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 5, "config_id": "A4_divfreq-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 25, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 5, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-025", "seed": 0, "initial_solution": 444.0, "final_solution": 474.0, "time_ms": 101.02200000255834}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-025", "seed": 1, "initial_solution": 454.0, "final_solution": 464.0, "time_ms": 104.49949999747332}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-025", "seed": 2, "initial_solution": 461.0, "final_solution": 474.0, "time_ms": 159.575900004711}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-025", "seed": 3, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 111.96329999802401}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-025", "seed": 4, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 108.19199999968987}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 5, "config_id": "A4_divfreq-025", "best_initial": 444.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 6, "config_id": "A4_divfreq-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 25, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 6, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-025", "seed": 0, "initial_solution": 698.0, "final_solution": 718.0, "time_ms": 285.8854000005522}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-025", "seed": 1, "initial_solution": 699.0, "final_solution": 704.0, "time_ms": 174.53450000175508}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-025", "seed": 2, "initial_solution": 698.0, "final_solution": 714.0, "time_ms": 180.87070000183303}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-025", "seed": 3, "initial_solution": 683.0, "final_solution": 700.0, "time_ms": 220.30610000365414}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-025", "seed": 4, "initial_solution": 683.0, "final_solution": 700.0, "time_ms": 232.68519999692217}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 6, "config_id": "A4_divfreq-025", "best_initial": 698.0, "best_final": 718.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 7, "config_id": "A4_divfreq-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 25, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 7, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-025", "seed": 0, "initial_solution": 692.0, "final_solution": 716.0, "time_ms": 258.7506999989273}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-025", "seed": 1, "initial_solution": 694.0, "final_solution": 724.0, "time_ms": 178.47299999993993}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-025", "seed": 2, "initial_solution": 697.0, "final_solution": 716.0, "time_ms": 199.75220000196714}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-025", "seed": 3, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 189.3668999982765}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-025", "seed": 4, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 190.86779999634018}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 7, "config_id": "A4_divfreq-025", "best_initial": 694.0, "best_final": 724.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 8, "config_id": "A4_divfreq-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 25, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-025", "seed": 0, "initial_solution": 706.0, "final_solution": 720.0, "time_ms": 163.55900000053225}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-025", "seed": 1, "initial_solution": 692.0, "final_solution": 732.0, "time_ms": 166.97739999654004}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-025", "seed": 2, "initial_solution": 672.0, "final_solution": 728.0, "time_ms": 177.1054999990156}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-025", "seed": 3, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 201.29140000062762}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-025", "seed": 4, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 198.19960000313586}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 8, "config_id": "A4_divfreq-025", "best_initial": 692.0, "best_final": 732.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 9, "config_id": "A4_divfreq-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 25, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-025", "seed": 0, "initial_solution": 713.0, "final_solution": 716.0, "time_ms": 161.02130000217585}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-025", "seed": 1, "initial_solution": 703.0, "final_solution": 706.0, "time_ms": 162.43329999997513}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-025", "seed": 2, "initial_solution": 684.0, "final_solution": 733.0, "time_ms": 406.8576999998186}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-025", "seed": 3, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 184.30570000055013}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-025", "seed": 4, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 183.59130000317236}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 9, "config_id": "A4_divfreq-025", "best_initial": 684.0, "best_final": 733.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 10, "config_id": "A4_divfreq-025", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 25, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-025", "seed": 0, "initial_solution": 689.0, "final_solution": 699.0, "time_ms": 209.89239999471465}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-025", "seed": 1, "initial_solution": 705.0, "final_solution": 716.0, "time_ms": 166.20510000211652}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-025", "seed": 2, "initial_solution": 689.0, "final_solution": 689.0, "time_ms": 163.89649999473477}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-025", "seed": 3, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 186.37489999673562}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-025", "seed": 4, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 182.112499998766}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 10, "config_id": "A4_divfreq-025", "best_initial": 705.0, "best_final": 716.0}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["all", "--tabu", "--diversify-freq", "50", "--config-id", "A4_divfreq-050", "--out-dir", "results/metaheuristica/tabu/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "solver": null, "use_meta": true, "config_id": "A4_divfreq-050", "out_dir": "results/metaheuristica/tabu/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.metaheuristic_phase", "data": {"method": "tabu", "count": 10}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 1, "config_id": "A4_divfreq-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 1, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-050", "seed": 0, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 131.4074999972945}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-050", "seed": 1, "initial_solution": 444.0, "final_solution": 472.0, "time_ms": 140.59370000177296}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-050", "seed": 2, "initial_solution": 442.0, "final_solution": 460.0, "time_ms": 139.5182999985991}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-050", "seed": 3, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 87.65510000375798}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-050", "seed": 4, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 88.39679999800865}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 1, "config_id": "A4_divfreq-050", "best_initial": 444.0, "best_final": 472.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 2, "config_id": "A4_divfreq-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 2, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-050", "seed": 0, "initial_solution": 440.0, "final_solution": 474.0, "time_ms": 162.3888000031002}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-050", "seed": 1, "initial_solution": 454.0, "final_solution": 473.0, "time_ms": 142.39200000156416}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-050", "seed": 2, "initial_solution": 451.0, "final_solution": 463.0, "time_ms": 94.51280000212137}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-050", "seed": 3, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 99.1716999997152}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-050", "seed": 4, "initial_solution": 441.0, "final_solution": 456.0, "time_ms": 101.01209999993443}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 2, "config_id": "A4_divfreq-050", "best_initial": 440.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 3, "config_id": "A4_divfreq-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 3, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-050", "seed": 0, "initial_solution": 432.0, "final_solution": 459.0, "time_ms": 126.28579999727663}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-050", "seed": 1, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 101.76599999977043}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-050", "seed": 2, "initial_solution": 453.0, "final_solution": 459.0, "time_ms": 115.73090000456432}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-050", "seed": 3, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 107.43019999790704}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-050", "seed": 4, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 109.70929999893997}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 3, "config_id": "A4_divfreq-050", "best_initial": 451.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 4, "config_id": "A4_divfreq-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 4, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-050", "seed": 0, "initial_solution": 455.0, "final_solution": 461.0, "time_ms": 248.1608999951277}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-050", "seed": 1, "initial_solution": 444.0, "final_solution": 469.0, "time_ms": 230.22530000162078}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-050", "seed": 2, "initial_solution": 443.0, "final_solution": 470.0, "time_ms": 135.55640000413405}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-050", "seed": 3, "initial_solution": 444.0, "final_solution": 466.0, "time_ms": 122.14800000219839}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-050", "seed": 4, "initial_solution": 444.0, "final_solution": 466.0, "time_ms": 118.17600000358652}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 4, "config_id": "A4_divfreq-050", "best_initial": 443.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 5, "config_id": "A4_divfreq-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 5, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-050", "seed": 0, "initial_solution": 444.0, "final_solution": 474.0, "time_ms": 96.94950000266545}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-050", "seed": 1, "initial_solution": 454.0, "final_solution": 464.0, "time_ms": 104.90890000073705}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-050", "seed": 2, "initial_solution": 461.0, "final_solution": 474.0, "time_ms": 136.28389999939827}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-050", "seed": 3, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 105.70649999863235}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-050", "seed": 4, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 110.49730000377167}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 5, "config_id": "A4_divfreq-050", "best_initial": 444.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 6, "config_id": "A4_divfreq-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 6, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-050", "seed": 0, "initial_solution": 698.0, "final_solution": 718.0, "time_ms": 231.79610000079265}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-050", "seed": 1, "initial_solution": 699.0, "final_solution": 704.0, "time_ms": 171.4330999966478}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-050", "seed": 2, "initial_solution": 698.0, "final_solution": 714.0, "time_ms": 183.194099998218}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-050", "seed": 3, "initial_solution": 683.0, "final_solution": 700.0, "time_ms": 304.02430000685854}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-050", "seed": 4, "initial_solution": 683.0, "final_solution": 700.0, "time_ms": 255.98319999699015}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 6, "config_id": "A4_divfreq-050", "best_initial": 698.0, "best_final": 718.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 7, "config_id": "A4_divfreq-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 7, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-050", "seed": 0, "initial_solution": 692.0, "final_solution": 716.0, "time_ms": 259.7444999992149}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-050", "seed": 1, "initial_solution": 694.0, "final_solution": 724.0, "time_ms": 183.6336999986088}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-050", "seed": 2, "initial_solution": 697.0, "final_solution": 716.0, "time_ms": 219.63249999680556}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-050", "seed": 3, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 215.3171999962069}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-050", "seed": 4, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 191.3249999997788}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 7, "config_id": "A4_divfreq-050", "best_initial": 694.0, "best_final": 724.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 8, "config_id": "A4_divfreq-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-050", "seed": 0, "initial_solution": 706.0, "final_solution": 720.0, "time_ms": 164.4425999984378}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-050", "seed": 1, "initial_solution": 692.0, "final_solution": 732.0, "time_ms": 166.78780000074767}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-050", "seed": 2, "initial_solution": 672.0, "final_solution": 728.0, "time_ms": 175.08100000122795}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-050", "seed": 3, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 197.08559999708086}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-050", "seed": 4, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 197.86800000292715}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 8, "config_id": "A4_divfreq-050", "best_initial": 692.0, "best_final": 732.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 9, "config_id": "A4_divfreq-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-050", "seed": 0, "initial_solution": 713.0, "final_solution": 717.0, "time_ms": 224.22950000327546}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-050", "seed": 1, "initial_solution": 703.0, "final_solution": 706.0, "time_ms": 156.41039999900386}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-050", "seed": 2, "initial_solution": 684.0, "final_solution": 698.0, "time_ms": 186.67390000337036}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-050", "seed": 3, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 178.06910000217613}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-050", "seed": 4, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 184.84970000281464}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 9, "config_id": "A4_divfreq-050", "best_initial": 713.0, "best_final": 717.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 10, "config_id": "A4_divfreq-050", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-050", "seed": 0, "initial_solution": 689.0, "final_solution": 699.0, "time_ms": 206.7352000012761}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-050", "seed": 1, "initial_solution": 705.0, "final_solution": 716.0, "time_ms": 164.87920000508893}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-050", "seed": 2, "initial_solution": 689.0, "final_solution": 697.0, "time_ms": 392.8701999975601}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-050", "seed": 3, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 186.0305000009248}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-050", "seed": 4, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 183.20330000278773}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 10, "config_id": "A4_divfreq-050", "best_initial": 705.0, "best_final": 716.0}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["all", "--tabu", "--diversify-freq", "100", "--config-id", "A4_divfreq-100", "--out-dir", "results/metaheuristica/tabu/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "solver": null, "use_meta": true, "config_id": "A4_divfreq-100", "out_dir": "results/metaheuristica/tabu/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 100, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.metaheuristic_phase", "data": {"method": "tabu", "count": 10}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 1, "config_id": "A4_divfreq-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 100, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 1, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-100", "seed": 0, "initial_solution": 450.0, "final_solution": 472.0, "time_ms": 167.05350000120234}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-100", "seed": 1, "initial_solution": 444.0, "final_solution": 472.0, "time_ms": 180.31869999686023}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-100", "seed": 2, "initial_solution": 442.0, "final_solution": 465.0, "time_ms": 142.07230000465643}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-100", "seed": 3, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 89.59860000322806}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-100", "seed": 4, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 87.63029999681748}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 1, "config_id": "A4_divfreq-100", "best_initial": 450.0, "best_final": 472.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 2, "config_id": "A4_divfreq-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 100, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 2, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-100", "seed": 0, "initial_solution": 440.0, "final_solution": 473.0, "time_ms": 111.77989999850979}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-100", "seed": 1, "initial_solution": 454.0, "final_solution": 473.0, "time_ms": 140.23219999944558}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-100", "seed": 2, "initial_solution": 451.0, "final_solution": 463.0, "time_ms": 92.66180000122404}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-100", "seed": 3, "initial_solution": 441.0, "final_solution": 474.0, "time_ms": 196.36809999792604}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-100", "seed": 4, "initial_solution": 441.0, "final_solution": 474.0, "time_ms": 199.25209999928484}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 2, "config_id": "A4_divfreq-100", "best_initial": 441.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 3, "config_id": "A4_divfreq-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 100, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 3, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-100", "seed": 0, "initial_solution": 432.0, "final_solution": 459.0, "time_ms": 125.39660000038566}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-100", "seed": 1, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 105.14950000651879}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-100", "seed": 2, "initial_solution": 453.0, "final_solution": 459.0, "time_ms": 120.7977000012761}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-100", "seed": 3, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 104.88559999794234}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-100", "seed": 4, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 108.20450000028359}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 3, "config_id": "A4_divfreq-100", "best_initial": 451.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 4, "config_id": "A4_divfreq-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 100, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 4, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-100", "seed": 0, "initial_solution": 455.0, "final_solution": 470.0, "time_ms": 173.2560000018566}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-100", "seed": 1, "initial_solution": 444.0, "final_solution": 453.0, "time_ms": 89.70379999664146}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-100", "seed": 2, "initial_solution": 443.0, "final_solution": 470.0, "time_ms": 147.07289999932982}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-100", "seed": 3, "initial_solution": 444.0, "final_solution": 470.0, "time_ms": 190.37180000304943}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-100", "seed": 4, "initial_solution": 444.0, "final_solution": 470.0, "time_ms": 190.68459999834886}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 4, "config_id": "A4_divfreq-100", "best_initial": 455.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 5, "config_id": "A4_divfreq-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 100, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 5, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-100", "seed": 0, "initial_solution": 444.0, "final_solution": 474.0, "time_ms": 97.16199999820674}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-100", "seed": 1, "initial_solution": 454.0, "final_solution": 464.0, "time_ms": 106.87909999978729}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-100", "seed": 2, "initial_solution": 461.0, "final_solution": 474.0, "time_ms": 138.4068000043044}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-100", "seed": 3, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 106.32379999879049}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-100", "seed": 4, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 110.39180000079796}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 5, "config_id": "A4_divfreq-100", "best_initial": 444.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 6, "config_id": "A4_divfreq-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 100, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 6, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-100", "seed": 0, "initial_solution": 698.0, "final_solution": 718.0, "time_ms": 227.46639999968465}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-100", "seed": 1, "initial_solution": 699.0, "final_solution": 704.0, "time_ms": 173.82350000116276}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-100", "seed": 2, "initial_solution": 698.0, "final_solution": 719.0, "time_ms": 330.81689999380615}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-100", "seed": 3, "initial_solution": 683.0, "final_solution": 698.0, "time_ms": 177.34609999752138}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-100", "seed": 4, "initial_solution": 683.0, "final_solution": 698.0, "time_ms": 172.1825999993598}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 6, "config_id": "A4_divfreq-100", "best_initial": 698.0, "best_final": 719.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 7, "config_id": "A4_divfreq-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 100, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 7, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-100", "seed": 0, "initial_solution": 692.0, "final_solution": 716.0, "time_ms": 268.32059999287594}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-100", "seed": 1, "initial_solution": 694.0, "final_solution": 724.0, "time_ms": 176.33239999850048}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-100", "seed": 2, "initial_solution": 697.0, "final_solution": 716.0, "time_ms": 213.7159000048996}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-100", "seed": 3, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 188.94140000338666}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-100", "seed": 4, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 191.69449999753851}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 7, "config_id": "A4_divfreq-100", "best_initial": 694.0, "best_final": 724.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 8, "config_id": "A4_divfreq-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 100, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-100", "seed": 0, "initial_solution": 706.0, "final_solution": 720.0, "time_ms": 164.6067000037874}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-100", "seed": 1, "initial_solution": 692.0, "final_solution": 732.0, "time_ms": 165.7409000035841}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-100", "seed": 2, "initial_solution": 672.0, "final_solution": 728.0, "time_ms": 177.51080000016373}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-100", "seed": 3, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 201.3617000047816}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-100", "seed": 4, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 203.01669999753358}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 8, "config_id": "A4_divfreq-100", "best_initial": 692.0, "best_final": 732.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 9, "config_id": "A4_divfreq-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 100, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-100", "seed": 0, "initial_solution": 713.0, "final_solution": 717.0, "time_ms": 216.07400000357302}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-100", "seed": 1, "initial_solution": 703.0, "final_solution": 706.0, "time_ms": 159.4323999961489}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-100", "seed": 2, "initial_solution": 684.0, "final_solution": 698.0, "time_ms": 186.95970000408124}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-100", "seed": 3, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 185.99119999998948}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-100", "seed": 4, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 180.8524999942165}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 9, "config_id": "A4_divfreq-100", "best_initial": 713.0, "best_final": 717.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 10, "config_id": "A4_divfreq-100", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 100, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-100", "seed": 0, "initial_solution": 689.0, "final_solution": 699.0, "time_ms": 206.14440000645118}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-100", "seed": 1, "initial_solution": 705.0, "final_solution": 716.0, "time_ms": 161.69749999971827}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-100", "seed": 2, "initial_solution": 689.0, "final_solution": 689.0, "time_ms": 160.7335999942734}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-100", "seed": 3, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 188.86270000075456}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-100", "seed": 4, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 188.01380000513745}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 10, "config_id": "A4_divfreq-100", "best_initial": 705.0, "best_final": 716.0}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["all", "--tabu", "--diversify-freq", "200", "--config-id", "A4_divfreq-200", "--out-dir", "results/metaheuristica/tabu/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "solver": null, "use_meta": true, "config_id": "A4_divfreq-200", "out_dir": "results/metaheuristica/tabu/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 200, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.metaheuristic_phase", "data": {"method": "tabu", "count": 10}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 1, "config_id": "A4_divfreq-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 200, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 1, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-200", "seed": 0, "initial_solution": 450.0, "final_solution": 472.0, "time_ms": 158.13239999988582}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-200", "seed": 1, "initial_solution": 444.0, "final_solution": 468.0, "time_ms": 109.89669999980833}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-200", "seed": 2, "initial_solution": 442.0, "final_solution": 465.0, "time_ms": 136.25689999753376}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-200", "seed": 3, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 82.96989999507787}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 1, "config_id": "A4_divfreq-200", "seed": 4, "initial_solution": 472.0, "final_solution": 472.0, "time_ms": 86.28160000080243}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 1, "config_id": "A4_divfreq-200", "best_initial": 450.0, "best_final": 472.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 2, "config_id": "A4_divfreq-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 200, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 2, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-200", "seed": 0, "initial_solution": 440.0, "final_solution": 473.0, "time_ms": 104.13469999912195}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-200", "seed": 1, "initial_solution": 454.0, "final_solution": 474.0, "time_ms": 193.94800000009127}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-200", "seed": 2, "initial_solution": 451.0, "final_solution": 463.0, "time_ms": 91.82730000611627}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-200", "seed": 3, "initial_solution": 441.0, "final_solution": 474.0, "time_ms": 177.40069999854313}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 2, "config_id": "A4_divfreq-200", "seed": 4, "initial_solution": 441.0, "final_solution": 474.0, "time_ms": 180.1080999939586}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 2, "config_id": "A4_divfreq-200", "best_initial": 454.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 3, "config_id": "A4_divfreq-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 200, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 3, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-200", "seed": 0, "initial_solution": 432.0, "final_solution": 459.0, "time_ms": 124.35730000288459}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-200", "seed": 1, "initial_solution": 450.0, "final_solution": 464.0, "time_ms": 106.70260000188136}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-200", "seed": 2, "initial_solution": 453.0, "final_solution": 459.0, "time_ms": 114.88180000014836}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-200", "seed": 3, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 106.4288999987184}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 3, "config_id": "A4_divfreq-200", "seed": 4, "initial_solution": 451.0, "final_solution": 470.0, "time_ms": 109.26360000303248}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 3, "config_id": "A4_divfreq-200", "best_initial": 451.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 4, "config_id": "A4_divfreq-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 200, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 4, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-200", "seed": 0, "initial_solution": 455.0, "final_solution": 470.0, "time_ms": 181.57450000580866}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-200", "seed": 1, "initial_solution": 444.0, "final_solution": 453.0, "time_ms": 88.34409999690251}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-200", "seed": 2, "initial_solution": 443.0, "final_solution": 470.0, "time_ms": 152.47019999515032}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-200", "seed": 3, "initial_solution": 444.0, "final_solution": 466.0, "time_ms": 121.91300000267802}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 4, "config_id": "A4_divfreq-200", "seed": 4, "initial_solution": 444.0, "final_solution": 466.0, "time_ms": 121.07609999657143}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 4, "config_id": "A4_divfreq-200", "best_initial": 455.0, "best_final": 470.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 5, "config_id": "A4_divfreq-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 200, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 5, "n": 125, "m": 12}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-200", "seed": 0, "initial_solution": 444.0, "final_solution": 474.0, "time_ms": 98.00079999695299}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-200", "seed": 1, "initial_solution": 454.0, "final_solution": 464.0, "time_ms": 104.98760000336915}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-200", "seed": 2, "initial_solution": 461.0, "final_solution": 474.0, "time_ms": 137.55809999565827}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-200", "seed": 3, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 107.13969999778783}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 5, "config_id": "A4_divfreq-200", "seed": 4, "initial_solution": 462.0, "final_solution": 474.0, "time_ms": 107.22509999322938}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 5, "config_id": "A4_divfreq-200", "best_initial": 444.0, "best_final": 474.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 6, "config_id": "A4_divfreq-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 200, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 6, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-200", "seed": 0, "initial_solution": 698.0, "final_solution": 718.0, "time_ms": 231.3023999959114}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-200", "seed": 1, "initial_solution": 699.0, "final_solution": 704.0, "time_ms": 175.1527999949758}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-200", "seed": 2, "initial_solution": 698.0, "final_solution": 719.0, "time_ms": 326.4757999932044}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-200", "seed": 3, "initial_solution": 683.0, "final_solution": 698.0, "time_ms": 172.5332999994862}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 6, "config_id": "A4_divfreq-200", "seed": 4, "initial_solution": 683.0, "final_solution": 698.0, "time_ms": 172.18890000367537}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 6, "config_id": "A4_divfreq-200", "best_initial": 698.0, "best_final": 719.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 7, "config_id": "A4_divfreq-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 200, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 7, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-200", "seed": 0, "initial_solution": 692.0, "final_solution": 716.0, "time_ms": 265.5209000004106}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-200", "seed": 1, "initial_solution": 694.0, "final_solution": 724.0, "time_ms": 181.62569999549305}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-200", "seed": 2, "initial_solution": 697.0, "final_solution": 716.0, "time_ms": 211.91120000003139}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-200", "seed": 3, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 193.65639999887208}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 7, "config_id": "A4_divfreq-200", "seed": 4, "initial_solution": 701.0, "final_solution": 711.0, "time_ms": 193.61190000199713}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 7, "config_id": "A4_divfreq-200", "best_initial": 694.0, "best_final": 724.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 8, "config_id": "A4_divfreq-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 200, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-200", "seed": 0, "initial_solution": 706.0, "final_solution": 720.0, "time_ms": 167.08479999942938}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-200", "seed": 1, "initial_solution": 692.0, "final_solution": 732.0, "time_ms": 171.5323000025819}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-200", "seed": 2, "initial_solution": 672.0, "final_solution": 728.0, "time_ms": 174.76149999856716}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-200", "seed": 3, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 203.9738000021316}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 8, "config_id": "A4_divfreq-200", "seed": 4, "initial_solution": 688.0, "final_solution": 728.0, "time_ms": 206.6091000015149}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 8, "config_id": "A4_divfreq-200", "best_initial": 692.0, "best_final": 732.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 9, "config_id": "A4_divfreq-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 200, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-200", "seed": 0, "initial_solution": 713.0, "final_solution": 717.0, "time_ms": 245.25400000129594}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-200", "seed": 1, "initial_solution": 703.0, "final_solution": 706.0, "time_ms": 158.4699999948498}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-200", "seed": 2, "initial_solution": 684.0, "final_solution": 698.0, "time_ms": 191.78639999881852}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-200", "seed": 3, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 181.14040000364184}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 9, "config_id": "A4_divfreq-200", "seed": 4, "initial_solution": 685.0, "final_solution": 704.0, "time_ms": 180.9812999999849}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 9, "config_id": "A4_divfreq-200", "best_initial": 713.0, "best_final": 717.0}}
+{"event_kind": "run_metaheuristic.start", "data": {"instance_number": 10, "config_id": "A4_divfreq-200", "seeds": 5, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 200, "init": "greedy"}}}
+{"event_kind": "run_metaheuristic.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-200", "seed": 0, "initial_solution": 689.0, "final_solution": 699.0, "time_ms": 205.46290000493173}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-200", "seed": 1, "initial_solution": 705.0, "final_solution": 716.0, "time_ms": 161.09769999457058}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-200", "seed": 2, "initial_solution": 689.0, "final_solution": 689.0, "time_ms": 162.04930000094464}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-200", "seed": 3, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 188.41429999883985}}
+{"event_kind": "run_metaheuristic.seed_done", "data": {"instance_number": 10, "config_id": "A4_divfreq-200", "seed": 4, "initial_solution": 689.0, "final_solution": 706.0, "time_ms": 185.91230000311043}}
+{"event_kind": "run_metaheuristic.done", "data": {"instance_number": 10, "config_id": "A4_divfreq-200", "best_initial": 705.0, "best_final": 716.0}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["8", "--highs", "--time-limit", "600", "--config-id", "tl-600", "--out-dir", "results/solver/highs/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [8], "solver": "highs", "use_meta": false, "config_id": "tl-600", "out_dir": "results/solver/highs/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.solver_phase", "data": {"solver": "highs", "count": 1}}
+{"event_kind": "run_one.start", "data": {"instance_number": 8, "solver": "highs", "time_limit_s": 600}}
+{"event_kind": "run_one.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15, "edges": 11175}}
+{"event_kind": "run_one.solving", "data": {"instance_number": 8}}
+{"event_kind": "run_one.solved", "data": {"instance_number": 8, "status": "Feasible", "objective": 503.0, "time_ms": 624629.4584999996}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["8", "--cplex", "--time-limit", "600", "--config-id", "tl-600", "--out-dir", "results/solver/cplex/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [8], "solver": "cplex", "use_meta": false, "config_id": "tl-600", "out_dir": "results/solver/cplex/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.solver_phase", "data": {"solver": "cplex", "count": 1}}
+{"event_kind": "run_one.start", "data": {"instance_number": 8, "solver": "cplex", "time_limit_s": 600}}
+{"event_kind": "run_one.instance_loaded", "data": {"instance_number": 8, "n": 150, "m": 15, "edges": 11175}}
+{"event_kind": "run_one.solving", "data": {"instance_number": 8}}
+{"event_kind": "run_one.solved", "data": {"instance_number": 8, "status": "Optimal", "objective": 659.0, "time_ms": 601277.3607999989}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["9", "--highs", "--time-limit", "600", "--config-id", "tl-600", "--out-dir", "results/solver/highs/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [9], "solver": "highs", "use_meta": false, "config_id": "tl-600", "out_dir": "results/solver/highs/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.solver_phase", "data": {"solver": "highs", "count": 1}}
+{"event_kind": "run_one.start", "data": {"instance_number": 9, "solver": "highs", "time_limit_s": 600}}
+{"event_kind": "run_one.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15, "edges": 11175}}
+{"event_kind": "run_one.solving", "data": {"instance_number": 9}}
+{"event_kind": "run_one.solved", "data": {"instance_number": 9, "status": "Feasible", "objective": 469.0, "time_ms": 646492.509900003}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["9", "--cplex", "--time-limit", "600", "--config-id", "tl-600", "--out-dir", "results/solver/cplex/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [9], "solver": "cplex", "use_meta": false, "config_id": "tl-600", "out_dir": "results/solver/cplex/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.solver_phase", "data": {"solver": "cplex", "count": 1}}
+{"event_kind": "run_one.start", "data": {"instance_number": 9, "solver": "cplex", "time_limit_s": 600}}
+{"event_kind": "run_one.instance_loaded", "data": {"instance_number": 9, "n": 150, "m": 15, "edges": 11175}}
+{"event_kind": "run_one.solving", "data": {"instance_number": 9}}
+{"event_kind": "run_one.solved", "data": {"instance_number": 9, "status": "Optimal", "objective": 659.0, "time_ms": 601182.4005000016}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["10", "--highs", "--time-limit", "600", "--config-id", "tl-600", "--out-dir", "results/solver/highs/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [10], "solver": "highs", "use_meta": false, "config_id": "tl-600", "out_dir": "results/solver/highs/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.solver_phase", "data": {"solver": "highs", "count": 1}}
+{"event_kind": "run_one.start", "data": {"instance_number": 10, "solver": "highs", "time_limit_s": 600}}
+{"event_kind": "run_one.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15, "edges": 11175}}
+{"event_kind": "run_one.solving", "data": {"instance_number": 10}}
+{"event_kind": "run_one.solved", "data": {"instance_number": 10, "status": "Feasible", "objective": 513.0, "time_ms": 618582.0840000014}}
+{"event_kind": "main.done", "data": {}}
+{"event_kind": "main.start", "data": {"argv": ["10", "--cplex", "--time-limit", "600", "--config-id", "tl-600", "--out-dir", "results/solver/cplex/M3"]}}
+{"event_kind": "main.config", "data": {"targets": [10], "solver": "cplex", "use_meta": false, "config_id": "tl-600", "out_dir": "results/solver/cplex/M3", "time_limit_s": 600, "params": {"tenure": 10, "max_no_improve": 100, "max_iter": 1000, "diversify_freq": 50, "init": "greedy", "seeds": 5}}}
+{"event_kind": "main.solver_phase", "data": {"solver": "cplex", "count": 1}}
+{"event_kind": "run_one.start", "data": {"instance_number": 10, "solver": "cplex", "time_limit_s": 600}}
+{"event_kind": "run_one.instance_loaded", "data": {"instance_number": 10, "n": 150, "m": 15, "edges": 11175}}
+{"event_kind": "run_one.solving", "data": {"instance_number": 10}}
+{"event_kind": "run_one.solved", "data": {"instance_number": 10, "status": "Optimal", "objective": 660.0, "time_ms": 600964.5059999966}}
+{"event_kind": "main.done", "data": {}}
