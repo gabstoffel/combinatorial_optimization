@@ -41,6 +41,35 @@ def _random_perturbation(
     return new_group, calculate_objective(new_group, affinity)
 
 
+def _deterministic_perturbation(
+    group: set[int], everyone: set[int], affinity: list[list[float]]
+) -> tuple[set[int], float]:
+    """Versão determinística de `_random_perturbation`: remove o membro que menos
+    contribui com a afinidade do grupo e adiciona a pessoa de fora com maior ganho
+    em relação ao grupo restante. Empates resolvidos pelo menor índice (via `min`/
+    `max` estáveis sobre faixas ordenadas), garantindo total reprodutibilidade.
+
+    Usada no modo determinístico para escapar de ótimos locais sem qualquer sorteio.
+    """
+    # Membro que menos contribui: menor soma de afinidade com os demais membros.
+    # Itera em ordem crescente de índice para desempatar pelo menor índice.
+    leaving = min(
+        sorted(group),
+        key=lambda member: sum(
+            affinity[member][other] for other in group if other != member
+        ),
+    )
+    remaining = group - {leaving}
+    outsiders = everyone - group
+    # Pessoa de fora com maior ganho de afinidade em relação ao grupo restante.
+    entering = max(
+        sorted(outsiders),
+        key=lambda person: sum(affinity[person][member] for member in remaining),
+    )
+    new_group = remaining | {entering}
+    return new_group, calculate_objective(new_group, affinity)
+
+
 def run_tabu_search(
     instance: Instance,
     initial_solution: list[int],
@@ -48,18 +77,23 @@ def run_tabu_search(
     max_no_improve: int = 100,
     tenure: int = 10,
     diversify_freq: int = 50,
+    deterministic: bool = False,
 ) -> tuple[list[int], float]:
     """Maximiza a afinidade do grupo usando busca tabu.
 
     A cada iteração, troca o par (membro/pessoa de fora) com o maior ganho de
     objetivo, proibindo quem foi removido recentemente de voltar ao grupo por
     `tenure` iterações. A cada `diversify_freq` iterações o grupo sofre uma
-    perturbação aleatória para escapar de ótimos locais. Para após `max_iter`
-    iterações ou `max_no_improve` movimentos consecutivos sem melhora.
+    perturbação para escapar de ótimos locais. Para após `max_iter` iterações ou
+    `max_no_improve` movimentos consecutivos sem melhora.
+
+    Com `deterministic=True`, a perturbação usa `_deterministic_perturbation` (sem
+    qualquer sorteio), tornando a execução totalmente reprodutível.
     """
     num_people = instance.n
     affinity = instance.affinity  # matriz affinity[i][j] (não a lista de tuplas .a)
     everyone = set(range(num_people))
+    perturb = _deterministic_perturbation if deterministic else _random_perturbation
 
     current_group = set(initial_solution)
     best_group = set(current_group)
@@ -78,9 +112,7 @@ def run_tabu_search(
         # Diversificação periódica: a cada `diversify_freq` iterações, perturba
         # o grupo aleatoriamente e pula direto para a próxima iteração.
         if diversify_freq > 0 and iteration > 1 and iteration % diversify_freq == 0:
-            current_group, current_obj = _random_perturbation(
-                current_group, everyone, affinity
-            )
+            current_group, current_obj = perturb(current_group, everyone, affinity)
             continue
 
         # Procura a melhor troca: maior delta entre todos os pares
@@ -120,9 +152,7 @@ def run_tabu_search(
                 iters_without_improve += 1
         elif iteration < max_iter - 10:
             # Nenhum movimento admissível: perturba em vez de desistir.
-            current_group, current_obj = _random_perturbation(
-                current_group, everyone, affinity
-            )
+            current_group, current_obj = perturb(current_group, everyone, affinity)
             iters_without_improve += 1
         else:
             break

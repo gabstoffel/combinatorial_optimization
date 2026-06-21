@@ -1,0 +1,1 @@
+{"instance": "oma06", "method": "tabu", "config_id": "B_degenerate", "seed": null, "params": {"tenure": 1, "max_no_improve": 25, "max_iter": 250, "diversify_freq": 0, "init": "greedy"}, "initial_solution": 698.0, "final_solution": 705.0, "time_ms": 102.91026200138731}
