@@ -3,10 +3,16 @@ import random
 import sys
 import time
 
-from pulp import LpStatus
+from pulp import (
+    LpSolutionOptimal,
+    LpSolutionIntegerFeasible,
+    LpSolutionInfeasible,
+    LpSolutionNoSolutionFound,
+    LpSolutionUnbounded,
+)
 
 from oma.instance import Instance
-from oma.logger import Logger, write_run, append_meta_run, write_config
+from oma.logger import Logger, append_solver_run, append_meta_run, write_config
 from oma.solvers import GenericSolver, SolverType, build_model
 from oma.metaheuristica.greedy import greedy_construction, random_construction
 from oma.metaheuristica.tabu_search import calculate_objective, run_tabu_search
@@ -17,6 +23,14 @@ logger = Logger(file_path=EVENTS_LOG)
 NUM_INSTANCES = 10
 SOLVER_TIME_LIMIT = 600
 META_METHOD = "tabu"
+
+SOLVER_STATUS = {
+    LpSolutionOptimal: "Optimal",
+    LpSolutionIntegerFeasible: "Feasible",  
+    LpSolutionInfeasible: "Infeasible",
+    LpSolutionUnbounded: "Unbounded",
+    LpSolutionNoSolutionFound: "No Solution",
+}
 
 DEFAULT_TABU = dict(tenure=10, max_no_improve=100, max_iter=1000, diversify_freq=50)
 DEFAULT_SEEDS = 5
@@ -34,6 +48,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--cplex", action="store_true", help="run the CPLEX exact solver")
     parser.add_argument("--highs", action="store_true", help="run the HiGHS exact solver")
     parser.add_argument("--tabu", action="store_true", help="run greedy + tabu metaheuristic")
+    parser.add_argument("--time-limit", type=int, default=SOLVER_TIME_LIMIT,
+                        help="exact solver time limit in seconds")
 
     parser.add_argument("--tenure", type=int, default=DEFAULT_TABU["tenure"])
     parser.add_argument("--max-iter", type=int, default=DEFAULT_TABU["max_iter"])
@@ -80,11 +96,17 @@ def parse_args(argv):
     return args
 
 
-def run_one(instance_number: int, solver_option: SolverType):
+def run_one(
+    instance_number: int,
+    solver_option: SolverType,
+    time_limit: int = SOLVER_TIME_LIMIT,
+    config_id: str | None = None,
+    out_dir: str = "logs",
+):
     logger.info("run_one.start", {
         "instance_number": instance_number,
         "solver": solver_option.value,
-        "time_limit_s": SOLVER_TIME_LIMIT,
+        "time_limit_s": time_limit,
     })
 
     instance = Instance.from_file(instance_number)
@@ -96,14 +118,14 @@ def run_one(instance_number: int, solver_option: SolverType):
     })
 
     prob = build_model(instance)
-    solver = GenericSolver.create(solver_option, time_limit=SOLVER_TIME_LIMIT)
+    solver = GenericSolver.create(solver_option, time_limit=time_limit)
     logger.info("run_one.solving", {"instance_number": instance_number})
 
     start = time.perf_counter()
     prob.solve(solver)
     elapsed_ms = (time.perf_counter() - start) * 1000
 
-    status = LpStatus[prob.status]
+    status = SOLVER_STATUS.get(prob.sol_status, f"Unknown ({prob.sol_status})")
     objective = prob.objective.value()
 
     logger.info("run_one.solved", {
@@ -113,13 +135,15 @@ def run_one(instance_number: int, solver_option: SolverType):
         "time_ms": elapsed_ms,
     })
 
-    write_run(
+    append_solver_run(
         instance_number=instance_number,
         method=solver_option.value,
         final_solution=objective,
         time_ms=elapsed_ms,
         status=status,
-        params={"time_limit_s": SOLVER_TIME_LIMIT},
+        params={"time_limit_s": time_limit},
+        config_id=config_id,
+        out_dir=out_dir,
     )
 
     print(f"[{solver_option.value}] oma{instance_number:02d} (n={instance.n}, m={instance.m})")
@@ -226,13 +250,25 @@ def main():
         "use_meta": args.use_meta,
         "config_id": args.config_id,
         "out_dir": args.out_dir,
+        "time_limit_s": args.time_limit,
         "params": {**args.tabu_params, "init": args.init, "seeds": args.seeds},
     })
 
     if args.solver_option is not None:
         logger.info("main.solver_phase", {"solver": args.solver_option.value, "count": len(targets)})
+        write_config(
+            {"solver": args.solver_option.value, "time_limit_s": args.time_limit},
+            config_id=args.config_id,
+            out_dir=args.out_dir,
+        )
         for i in targets:
-            run_one(i, args.solver_option)
+            run_one(
+                i,
+                args.solver_option,
+                time_limit=args.time_limit,
+                config_id=args.config_id,
+                out_dir=args.out_dir,
+            )
 
     if args.use_meta:
         logger.info("main.metaheuristic_phase", {"method": META_METHOD, "count": len(targets)})

@@ -5,31 +5,6 @@ import sys
 from typing import Any
 
 
-def write_run(
-    instance_number: int,
-    method: str,
-    final_solution: float,
-    time_ms: float,
-    initial_solution: float | None = None,
-    status: str | None = None,
-    params: dict | None = None,
-) -> None:
-    record = {
-        "instance": f"oma{instance_number:02d}",
-        "method": method,
-        "status": status,
-        "params": params,
-        "initial_solution": initial_solution,
-        "final_solution": final_solution,
-        "time_ms": time_ms,
-    }
-
-    os.makedirs("logs", exist_ok=True)
-    path = f"logs/oma{instance_number:02d}_{method}.json"
-    with open(path, "w") as file:
-        json.dump(record, file, indent=2)
-
-
 def _meta_dir(out_dir: str, config_id: str | None) -> str:
     """Directory holding the metaheuristic logs for a run/config."""
     return os.path.join(out_dir, config_id) if config_id else out_dir
@@ -58,6 +33,39 @@ def append_meta_run(
         "seed": seed,
         "params": params,
         "initial_solution": initial_solution,
+        "final_solution": final_solution,
+        "time_ms": time_ms,
+    }
+
+    directory = _meta_dir(out_dir, config_id)
+    os.makedirs(directory, exist_ok=True)
+    path = os.path.join(directory, f"oma{instance_number:02d}_{method}.jsonl")
+    with open(path, "a") as file:
+        file.write(json.dumps(record) + "\n")
+
+
+def append_solver_run(
+    instance_number: int,
+    method: str,
+    final_solution: float,
+    time_ms: float,
+    status: str | None = None,
+    params: dict | None = None,
+    config_id: str | None = None,
+    out_dir: str = "logs",
+) -> None:
+    """Append one exact-solver run as a JSON line to
+    `<out_dir>[/<config_id>]/omaNN_<method>.jsonl`. Mirrors `append_meta_run`
+    so the solver and metaheuristic results share the same self-describing,
+    config-routed layout. Solver runs are deterministic (one line per instance)
+    and carry a `status` field instead of a `seed`.
+    """
+    record = {
+        "instance": f"oma{instance_number:02d}",
+        "method": method,
+        "config_id": config_id,
+        "status": status,
+        "params": params,
         "final_solution": final_solution,
         "time_ms": time_ms,
     }

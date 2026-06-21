@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
-# M2 — Gabriel (PC-B): bloco A3 (max_iter, 5) + B (config completa, 3) + solver exato.
-# Bloco mais pesado (max_iter até 5000). Saída em results/M2/<config_id>/.
+# M2 — Gabriel (PC-B, Linux): HEURÍSTICA bloco A3 (max_iter, 5) + B (config completa, 3),
+# mais a fatia oma05-07 do SOLVER exato (HiGHS + CPLEX).
+# Bloco tabu mais pesado (max_iter até 5000). Saída em results/metaheuristica/tabu/M2/<config_id>/.
 # Baseline (demais parâmetros): tenure=10, max_no_improve=100, max_iter=1000, diversify_freq=50.
 set -u
-OUT=results/M2
+OUT=results/metaheuristica/tabu/M2
+SOLVER_TL=600
+SOLVER_INSTANCES="5 6 7"   # fatia desta máquina (editável para balancear carga)
 
 # --- A3: varredura de max_iter (demais na baseline) ---
 uv run oma all --tabu --max-iter 250  --config-id A3_maxiter-0250 --out-dir "$OUT"
@@ -26,5 +29,9 @@ uv run oma all --tabu --tenure 10 --max-no-improve 400 --max-iter 2000 --diversi
 uv run oma all --tabu --tenure 1 --max-no-improve 25 --max-iter 250 --diversify-freq 0 \
   --config-id B_degenerate --out-dir "$OUT"
 
-# --- Solver exato (HiGHS) cobrindo as 10 instâncias ---
-uv run oma all --highs
+# --- Solver exato: fatia oma05-07 (HiGHS + CPLEX) ---
+# Saída: results/solver/<solver>/M2/tl-600/. Determinístico: 1 linha por instância.
+for i in $SOLVER_INSTANCES; do
+  uv run oma "$i" --highs --time-limit "$SOLVER_TL" --config-id "tl-$SOLVER_TL" --out-dir results/solver/highs/M2
+  uv run oma "$i" --cplex --time-limit "$SOLVER_TL" --config-id "tl-$SOLVER_TL" --out-dir results/solver/cplex/M2
+done
