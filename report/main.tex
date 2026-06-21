@@ -1,36 +1,26 @@
-% =====================================================================
-%  Relatório — INF05010 Otimização Combinatória (UFRGS)
-%  Problema: Os Melhores Amigos (OMA) — Meta-heurística: Busca Tabu
-%
-%  Formatação segundo as normas oficiais SOBRAPO/SBPO (Artigos Completos):
-%    A4, fonte Times New Roman 11, coluna única, espaçamento simples,
-%    margens 3,3 / 2,5 / 2,9 cm, no máximo 12 páginas (ver docs/sobrapo_norms.md).
-%  O ideal é substituir este preâmbulo pelo template LaTeX oficial PT-BR da
-%  SOBRAPO; este reproduz as mesmas normas e compila sem .sty externo.
-% =====================================================================
 \documentclass[a4paper,11pt]{article}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
-\usepackage{mathptmx}            % Times New Roman
+\usepackage{mathptmx}            
 \usepackage{amsmath,amssymb}
 \usepackage[top=3.3cm,bottom=2.5cm,left=2.9cm,right=2.9cm]{geometry}
 \usepackage{graphicx}
+\graphicspath{{figures/}{./}}
 \usepackage{booktabs}
 \usepackage{array}
-\usepackage{siunitx}             % colunas numéricas alinhadas (S)
+\usepackage{siunitx}           
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{url}
 \usepackage{cite}
+\usepackage{placeins}
 
 \setlength{\parindent}{1.25em}
 
 \title{\textbf{Os Melhores Amigos}}
 
-% Submissão ao SBPO seria ANÔNIMA (sem autores); como este é um trabalho de
-% disciplina, os autores são incluídos na versão de entrega.
 \author{Gabriel Stoffel \quad Rodrigo Feldens \\
   \small INF05010 --- Otimização Combinatória \\
   \small Instituto de Informática, Universidade Federal do Rio Grande do Sul (UFRGS)}
@@ -39,7 +29,6 @@
 \begin{document}
 \maketitle
 
-% ---------------------------------------------------------------------
 \begin{abstract}
 \noindent\textbf{Resumo.}
 Este trabalho aborda o problema \emph{Os Melhores Amigos} (OMA): dado um conjunto de
@@ -47,18 +36,16 @@ $n$ pessoas e um valor de afinidade não negativo para cada par, deseja-se selec
 exatamente $m$ pessoas de modo a maximizar a soma das afinidades entre os pares
 escolhidos. O problema é tratado por duas abordagens complementares: (i) uma
 formulação como programa linear inteiro, resolvida por um solver genérico
-(HiGHS/CPLEX) que fornece a referência ótima por instância; e (ii) uma meta-heurística
+(HiGHS/CPLEX) que fornece uma referência de comparação por instância em um tempo limitado; e (ii) uma meta-heurística
 de \emph{Busca Tabu}, com construção inicial gulosa, vizinhança por troca e avaliação
 incremental do objetivo. O relatório descreve o modelo matemático, os componentes da
-Busca Tabu e o protocolo experimental, e (nas próximas versões) reportará a análise de
-sensibilidade dos parâmetros e a comparação entre a meta-heurística e o método exato
+Busca Tabu e o protocolo experimental, reportando o impacto dos parâmetros e a comparação entre a meta-heurística e o método exato
 sobre as 10 instâncias de teste.
 
 \medskip
 \noindent\textbf{Palavras-chave:} Busca Tabu; Otimização Combinatória; Programação Linear Inteira.
 \end{abstract}
 
-% ---------------------------------------------------------------------
 \section{Introdução}
 \label{sec:intro}
 
@@ -66,37 +53,33 @@ O problema \emph{Os Melhores Amigos} (OMA) consiste em, dado um conjunto de
 $n$ pessoas $P = [n]$ e um valor de afinidade não negativo $a_{ij} \geq 0$ para cada
 par $\{i,j\}$ com $i < j$, escolher um subconjunto $S \subseteq P$ com \textbf{exatamente}
 $m$ pessoas que maximize a afinidade total do grupo,
-%
 \begin{equation}
   A(S) = \sum_{\{i,j\} \subseteq S} a_{ij}.
   \label{eq:obj}
 \end{equation}
-%
 Trata-se de um problema de seleção combinatória: o número de subconjuntos candidatos é
 $\binom{n}{m}$, o que torna a enumeração exaustiva impraticável já para instâncias de
-tamanho moderado. Na literatura de Pesquisa Operacional, o OMA corresponde ao
+tamanho moderado. Na literatura, o OMA corresponde ao
 \textbf{Problema da Máxima Diversidade} (\emph{Maximum Diversity Problem}, MDP) em sua
 variante \emph{MaxSum}, no qual se seleciona um subconjunto de cardinalidade fixa que
 maximiza a soma das afinidades (ou dist\^ancias) entre os elementos
-escolhidos~\cite{kuo1993analyzing,marti2013heuristics,marti2022review}; o problema é
+escolhidos~\cite{kuo1993analyzing,marti2013heuristics,marti2022review}; Consequentemente, o problema é
 NP-difícil~\cite{kuo1993analyzing}.
 
 Neste trabalho o problema é atacado de duas formas complementares. A primeira é uma
 \textbf{formulação como programa linear inteiro} (Seção~\ref{sec:formulacao}), resolvida
-por um solver genérico de software livre, que fornece o valor ótimo --- ou o melhor
-limite encontrado dentro de um tempo-limite --- e serve de \textbf{referência} contra a
+por um solver genérico, que fornece o valor ótimo ou o melhor
+limite encontrado dentro de um tempo-limite e serve de \textbf{referência} contra a
 qual a heurística é avaliada. A segunda é uma \textbf{meta-heurística de Busca Tabu}
-(Seção~\ref{sec:solucao}), capaz de obter boas soluções em tempo reduzido. O objetivo
-central do estudo é medir quão perto a Busca Tabu chega da referência ótima e a que
-custo de tempo, além de analisar a sensibilidade do método aos seus parâmetros.
+(Seção~\ref{sec:solucao}), a qual é capaz de obter boas soluções em um menor tempo. O objetivo
+central destre relatório é medir quão perto a Busca Tabu chega da referência ótima e em quanto tempo, além de analisar a sensibilidade do método aos seus parâmetros.
 
 A avaliação utiliza um conjunto fixo de \textbf{10 instâncias} ($\texttt{oma01}$ a
 $\texttt{oma10}$): as cinco primeiras com $n = 125$ e $m = 12$, e as cinco últimas com
 $n = 150$ e $m = 15$. Os melhores valores conhecidos (BKV) dessas instâncias estão
-reproduzidos na Tabela~\ref{tab:bkv} e são usados como referência quando o solver não
-prova a otimalidade.
+reproduzidos na Tabela~\ref{tab:bkv} e são usados como referência.
 
-\begin{table}[t]
+\begin{table}[htbp]
   \centering
   \caption{Melhores valores conhecidos (BKV) das instâncias de teste.}
   \label{tab:bkv}
@@ -118,11 +101,10 @@ apresenta a formulação inteira do problema. A Seção~\ref{sec:solucao} descre
 meta-heurística de Busca Tabu e seus parâmetros. A Seção~\ref{sec:resultados} reporta os
 resultados experimentais e a análise, e a Seção~\ref{sec:conclusao} traz as conclusões.
 
-% ---------------------------------------------------------------------
 \section{Formulação como Programa Inteiro}
 \label{sec:formulacao}
 
-O OMA pode ser modelado como um programa linear inteiro binário. Para cada pessoa
+O OMA pode ser formulado como um programa inteiro binário. Para cada pessoa
 $i \in [n]$ define-se a variável de decisão $x_i \in \{0,1\}$, com $x_i = 1$ se e somente
 se a pessoa $i$ é selecionada. Como o objetivo~\eqref{eq:obj} envolve o produto
 $x_i\,x_j$ (a afinidade de um par só conta quando ambas as pessoas são escolhidas),
@@ -132,7 +114,6 @@ introduz-se, para cada par $i < j$, uma variável auxiliar $z_{ij} \in \{0,1\}$ 
 aplicada ao MDP por Kuo, Glover e Dhir~\cite{kuo1993analyzing}.
 
 O modelo completo é:
-%
 \begin{align}
   \max \quad & \sum_{\substack{i,j \in [n] \\ i < j}} a_{ij}\, z_{ij} \label{eq:ilp-obj}\\
   \text{s.a.} \quad
@@ -160,17 +141,16 @@ deixe $z_{ij} = 0$ com ambas as pessoas selecionadas.
 \paragraph{Tamanho do modelo.}
 O modelo usa $n$ variáveis $x_i$ e $\binom{n}{2}$ variáveis $z_{ij}$, além de uma
 restrição de cardinalidade e três restrições de linearização por par, totalizando
-$3\binom{n}{2} + 1$ restrições. O crescimento quadrático no número de pares ($z_{ij}$ e
-restrições) é o principal fator que limita a resolução exata em instâncias maiores e
+$3\binom{n}{2} + 1$ restrições. Percebe-se que temos um crescimento quadrático no número de pares ($z_{ij}$ e
+restrições). Assim, este é o principal fator que limita a resolução exata em instâncias maiores e
 motiva o uso da meta-heurística.
 
-% ---------------------------------------------------------------------
 \section{Descrição da Solução --- Busca Tabu}
 \label{sec:solucao}
 
 A meta-heurística escolhida é a \textbf{Busca Tabu} (BT)~\cite{glover1989tabu,glover1997tabu},
 uma busca local que escapa de ótimos locais mantendo uma memória de curto prazo (a
-\emph{lista tabu}) que proíbe temporariamente o desfazimento de movimentos recentes
+\emph{lista tabu}) que proíbe temporariamente desfazer os movimentos recentes
 \cite{hertz1995tutorial,gendreau2003intro,ritt2024inf05010}. A aplicação de Busca Tabu e
 de procedimentos gulosos/GRASP ao MDP é bem estabelecida na
 literatura~\cite{duarte2007tabu}. A seguir descrevem-se seus componentes.
@@ -184,12 +164,10 @@ $m$ é preservada em cada passo.
 A solução inicial é construída por uma heurística \textbf{gulosa}~\cite{feo1995greedy} que,
 partindo do conjunto vazio, adiciona repetidamente a pessoa que mais aumenta a afinidade
 total até atingir $m$ pessoas:
-%
 \begin{equation*}
   \text{ganho}(p) = \sum_{i \in S} a_{ip}, \qquad
   p^\star = \arg\max_{p \notin S} \text{ganho}(p).
 \end{equation*}
-%
 Para evitar recalcular a soma a cada iteração, mantém-se um vetor de ganhos incrementais
 atualizado a cada inserção. Como alternativa de comparação (bloco experimental A5),
 considera-se também uma \textbf{construção aleatória}, que amostra $m$ pessoas
@@ -198,24 +176,20 @@ uniformemente, permitindo avaliar o ganho efetivo da partida gulosa.
 \subsection{Vizinhança}
 A partir de uma solução $S$, um vizinho $S'$ é obtido por uma \textbf{troca} (\emph{swap}):
 remove-se uma pessoa $p \in S$ e insere-se uma pessoa $p' \notin S$,
-%
 \begin{equation*}
   S' = (S \setminus \{p\}) \cup \{p'\}, \qquad p \in S,\; p' \notin S.
 \end{equation*}
-%
 A vizinhança tem tamanho $m\,(n-m)$ e preserva a cardinalidade $|S'| = m$.
 
 \subsection{Função objetivo e avaliação incremental (delta)}
 Recalcular $A(S)$ inteira a cada vizinho é custoso. Em vez disso, avalia-se o
 \textbf{delta} de uma troca de $p$ por $p'$ em $O(m)$:
-%
 \begin{equation}
   \Delta = A(S') - A(S)
          = \sum_{i \in S \setminus \{p\}} a_{p'i}
          - \sum_{i \in S \setminus \{p\}} a_{pi}.
   \label{eq:delta}
 \end{equation}
-%
 A cada iteração escolhe-se a troca não tabu de maior $\Delta$ (estratégia de melhor
 vizinho).
 
@@ -275,7 +249,7 @@ referência (\emph{baseline}) usados como ponto central das varreduras de sensib
 são \texttt{tenure}~$=10$, \texttt{max\_no\_improve}~$=100$, \texttt{max\_iter}~$=1000$,
 \texttt{diversify\_freq}~$=50$ e construção inicial gulosa.
 
-\begin{table}[t]
+\begin{table}[htbp]
   \centering
   \caption{Parâmetros da Busca Tabu.}
   \label{tab:params}
@@ -292,27 +266,242 @@ são \texttt{tenure}~$=10$, \texttt{max\_no\_improve}~$=100$, \texttt{max\_iter}
   \end{tabular}
 \end{table}
 
-% ---------------------------------------------------------------------
 \section{Resultados Obtidos e Análise}
 \label{sec:resultados}
 
-% TODO: preencher após rodar os experimentos (varredura M1/M2/M3 + solver) e
-% gerar figuras/tabelas com `uv run oma-report --results-dir results --out-dir report`.
-% Esta seção espelhará a estrutura do relatório de referência (docs/reference_report.md):
-%   - Análise de sensibilidade dos parâmetros (blocos A1--A4), figuras report/figures/A*.png
-%   - Comparação da construção inicial gulosa vs. aleatória (bloco A5)
-%   - Tabelas por instância (baseline/tunada/degenerada vs. solver vs. BKV), report/tables/T*.{csv,md}
-%   - Comparação exato vs. exato (HiGHS vs. CPLEX)
-\textit{Seção a ser preenchida após a execução dos experimentos.}
+\paragraph{Protocolo experimental.}
+Todos os experimentos foram executados sobre as 10 instâncias $\texttt{oma01}$--$\texttt{oma10}$. Cada configuração da meta-heurística foi avaliada com \textbf{5 sementes}
+aleatórias por instância, reportando-se média e desvio-padrão das soluções finais (SF) e
+do tempo. Os solvers exatos (CPLEX e HiGHS) foram executados com \textbf{tempo-limite de
+\SI{600}{\second}} por instância; como se verá, esse orçamento não é suficiente para provar
+otimalidade em nenhuma instância, de modo que os valores reportados correspondem ao
+\textbf{melhor incumbente} encontrado dentro do limite (e não ao ótimo). As métricas
+derivadas são o desvio percentual em relação ao BKV, $\text{dev}_{\text{BKV}} =
+100\,(\text{BKV}-\text{SF})/\text{BKV}$ (quanto menor, melhor), e o ganho da busca sobre a
+solução inicial, $\text{dev}_{\text{SI}} = 100\,(\text{SI}-\text{SF})/\text{SI}$ (negativo
+indica melhora).
 
-% ---------------------------------------------------------------------
+\subsection{Análise de sensibilidade dos parâmetros}
+\label{sec:sens}
+
+A Figura~\ref{fig:sens} apresenta as varreduras \emph{um-fator-por-vez} (blocos A1--A4),
+nas quais cada parâmetro é variado em torno da configuração de referência, agregando
+qualidade (\% do BKV) e tempo sobre todas as instâncias e sementes.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}{0.49\textwidth}\centering
+    \includegraphics[width=\linewidth]{A1_tenure.png}\\[-0.2em]
+    {\small (a) \texttt{tenure}}
+  \end{minipage}\hfill
+  \begin{minipage}{0.49\textwidth}\centering
+    \includegraphics[width=\linewidth]{A2_max_no_improve.png}\\[-0.2em]
+    {\small (b) \texttt{max\_no\_improve}}
+  \end{minipage}
+
+  \medskip
+  \begin{minipage}{0.49\textwidth}\centering
+    \includegraphics[width=\linewidth]{A3_max_iter.png}\\[-0.2em]
+    {\small (c) \texttt{max\_iter}}
+  \end{minipage}\hfill
+  \begin{minipage}{0.49\textwidth}\centering
+    \includegraphics[width=\linewidth]{A4_diversify_freq.png}\\[-0.2em]
+    {\small (d) \texttt{diversify\_freq}}
+  \end{minipage}
+  \caption{Análise de sensibilidade (blocos A1--A4): qualidade (\% do BKV) e tempo médio
+    em função de cada parâmetro.}
+  \label{fig:sens}
+\end{figure}
+
+\paragraph{\texttt{tenure} (A1).}
+Um \emph{tenure} muito curto degrada a busca: com \texttt{tenure}~$=1$ a proibição é
+insuficiente para impedir ciclos, resultando no pior desvio médio ($\approx \SI{2.1}{\percent}$)
+e na maior variância entre sementes. A qualidade melhora rapidamente e satura em torno de
+\texttt{tenure}~$\approx 20$ ($\approx \SI{1.1}{\percent}$), com pouco ganho adicional para
+valores maiores --- indício de que uma memória de curto prazo moderada já basta para
+escapar dos ótimos locais desta vizinhança.
+
+\paragraph{\texttt{max\_no\_improve} e \texttt{max\_iter} (A2, A3).}
+Ambos governam o orçamento de busca. Aumentar a paciência (\texttt{max\_no\_improve}) ou o
+número máximo de iterações (\texttt{max\_iter}) melhora a qualidade de forma marginal e
+decrescente, ao custo de tempo aproximadamente proporcional --- o clássico compromisso de
+convergência. Os ganhos tornam-se desprezíveis muito antes do maior valor testado,
+sugerindo que orçamentos intermediários oferecem o melhor custo--benefício.
+
+\paragraph{\texttt{diversify\_freq} (A4).}
+A perturbação periódica é determinante: desligá-la (\texttt{diversify\_freq}~$=0$, adotada
+na configuração \emph{degenerada}) produz o pior desempenho entre as configurações
+comparadas (Seção~\ref{sec:configs}). Frequências de diversificação intermediárias
+recuperam boa parte da qualidade, confirmando o papel do componente de diversificação como
+mecanismo de escape de ótimos locais.
+
+\paragraph{Construção inicial: gulosa vs. aleatória (A5).}
+A Figura~\ref{fig:init} compara as duas construções iniciais. A construção \textbf{gulosa}
+parte de soluções iniciais (SI) sensivelmente melhores que a aleatória, o que acelera a
+convergência da Busca Tabu; ainda assim, a busca local recupera grande parte da diferença
+ao longo das iterações. Adota-se a construção gulosa como padrão.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.62\textwidth]{A5_init.png}
+  \caption{Comparação da construção inicial (bloco A5): gulosa vs. aleatória.}
+  \label{fig:init}
+\end{figure}
+
+\subsection{Comparação das configurações da Busca Tabu}
+\label{sec:configs}
+
+Três configurações são comparadas: \emph{baseline} (valores de referência), \emph{tunada}
+(melhores valores da Seção~\ref{sec:sens}) e \emph{degenerada} (sem diversificação,
+orçamento mínimo). A Tabela~\ref{tab:tuned} detalha, por instância, a configuração tunada,
+e a Tabela~\ref{tab:bconf} resume o compromisso qualidade--tempo das três.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Configuração \emph{tunada}: por instância, solução inicial (SI), solução final
+    média (SF), ganho sobre a inicial e desvio do BKV (média de 5 sementes).}
+  \label{tab:tuned}
+  \begin{tabular}{l S[table-format=3.1] S[table-format=3.1]
+                    S[table-format=-1.2] S[table-format=1.2] S[table-format=4.1]}
+    \toprule
+    {Instância} & {SI} & {SF} & {dev$_{\text{SI}}$ (\%)} & {dev$_{\text{BKV}}$ (\%)} & {Tempo (ms)} \\
+    \midrule
+    oma01 & 456.0 & 470.4 & -3.24 & 0.34 & 616.6 \\
+    oma02 & 445.4 & 466.8 & -4.81 & 1.52 & 591.9 \\
+    oma03 & 447.4 & 465.6 & -4.09 & 0.94 & 663.0 \\
+    oma04 & 446.0 & 468.0 & -4.95 & 0.43 & 762.1 \\
+    oma05 & 456.6 & 474.0 & -3.84 & 0.00 & 626.4 \\
+    oma06 & 692.2 & 714.8 & -3.27 & 0.58 & 1670.4 \\
+    oma07 & 697.0 & 715.6 & -2.67 & 1.16 & 964.2 \\
+    oma08 & 689.2 & 727.2 & -5.54 & 0.66 & 920.1 \\
+    oma09 & 694.0 & 708.4 & -2.09 & 3.36 & 1077.2 \\
+    oma10 & 692.2 & 705.0 & -1.85 & 2.22 & 1169.7 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Compromisso qualidade--tempo das três configurações (médias sobre as 10
+    instâncias).}
+  \label{tab:bconf}
+  \begin{tabular}{l S[table-format=3.0] S[table-format=1.2]}
+    \toprule
+    {Configuração} & {Tempo médio (ms)} & {dev$_{\text{BKV}}$ médio (\%)} \\
+    \midrule
+    Degenerada & 58  & 2.63 \\
+    \emph{Baseline} & 244 & 1.47 \\
+    Tunada     & 906 & 1.12 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+As configurações formam uma fronteira de Pareto clara: a \emph{degenerada} é a mais rápida
+($\approx \SI{58}{\milli\second}$) porém a de pior qualidade ($\approx \SI{2.6}{\percent}$ de
+desvio), enquanto a \emph{tunada} entrega a melhor qualidade ($\approx \SI{1.1}{\percent}$,
+chegando a igualar o BKV em $\texttt{oma05}$) ao maior custo de tempo. As
+Figuras~\ref{fig:bquality} e~\ref{fig:btime} ilustram, por instância, a qualidade e o tempo
+das três configurações frente aos solvers. Observa-se ainda que as instâncias maiores
+($\texttt{oma06}$--$\texttt{oma10}$) demandam mais tempo, e que $\texttt{oma09}$ e
+$\texttt{oma02}$ são as mais difíceis para a heurística (maiores desvios), ao passo que
+$\texttt{oma05}$ é a mais fácil.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.72\textwidth]{B_instances_quality.png}
+  \caption{Qualidade (\% do BKV) por instância: configurações da Busca Tabu vs. solvers.}
+  \label{fig:bquality}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.72\textwidth]{B_instances_time.png}
+  \caption{Tempo de execução por instância (escala logarítmica): Busca Tabu vs. solvers.}
+  \label{fig:btime}
+\end{figure}
+
+\subsection{Comparação com os métodos exatos}
+\label{sec:exatos}
+
+A Tabela~\ref{tab:solver} reporta o melhor incumbente obtido por CPLEX e HiGHS dentro do
+tempo-limite de \SI{600}{\second}. Em \textbf{nenhuma} instância os solvers provaram
+otimalidade: todas as execuções esgotaram o orçamento de tempo, de modo que os valores
+ficam \emph{abaixo} do BKV.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Métodos exatos (melhor incumbente em \SI{600}{\second}; nenhuma execução provou
+    otimalidade). Desvio em relação ao BKV.}
+  \label{tab:solver}
+  \begin{tabular}{l S[table-format=3.0]
+                    S[table-format=3.0] S[table-format=2.2]
+                    S[table-format=3.0] S[table-format=2.2]}
+    \toprule
+    & & \multicolumn{2}{c}{CPLEX} & \multicolumn{2}{c}{HiGHS} \\
+    \cmidrule(lr){3-4}\cmidrule(lr){5-6}
+    {Instância} & {BKV} & {Obtido} & {dev$_{\text{BKV}}$ (\%)} & {Obtido} & {dev$_{\text{BKV}}$ (\%)} \\
+    \midrule
+    oma01 & 472 & 464 & 1.69 & 338 & 28.39 \\
+    oma02 & 474 & 450 & 5.06 & 322 & 32.07 \\
+    oma03 & 470 & 450 & 4.26 & 270 & 42.55 \\
+    oma04 & 470 & 453 & 3.62 & 299 & 36.38 \\
+    oma05 & 474 & 452 & 4.64 & 312 & 34.18 \\
+    oma06 & 719 & 677 & 5.84 & 523 & 27.26 \\
+    oma07 & 724 & 655 & 9.53 & 494 & 31.77 \\
+    oma08 & 732 & 659 & 9.97 & 503 & 31.28 \\
+    oma09 & 733 & 659 & 10.10 & 469 & 36.02 \\
+    oma10 & 721 & 660 & 8.46 & 513 & 28.85 \\
+    \midrule
+    {Média} & & & 6.32 & & 32.88 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+O resultado central do estudo emerge desta comparação: \textbf{a Busca Tabu supera os
+solvers exatos dentro do orçamento de tempo dado}. A configuração tunada obtém desvio médio
+de $\approx \SI{1.1}{\percent}$ do BKV em \emph{menos de dois segundos} por instância,
+contra $\approx \SI{6.3}{\percent}$ do CPLEX e $\approx \SI{32.9}{\percent}$ do HiGHS, ambos
+após \SI{600}{\second}. A diferença é mais acentuada nas instâncias maiores
+($\texttt{oma07}$--$\texttt{oma10}$), onde o CPLEX chega a $\approx \SI{10}{\percent}$ de
+desvio. O CPLEX é consistentemente superior ao HiGHS, refletindo as heurísticas primárias
+mais maduras do solver comercial.
+
+A explicação está no \textbf{tamanho do modelo} (Seção~\ref{sec:formulacao}): as instâncias
+são grafos de afinidade densos --- $\texttt{oma01}$ possui as $\binom{125}{2}=7750$ arestas
+possíveis e $\texttt{oma06}$, $\binom{150}{2}=11175$ ---, e a linearização introduz uma
+variável $z_{ij}$ e três restrições por par. O programa inteiro resultante tem dezenas de
+milhares de variáveis binárias e restrições, e o \emph{branch-and-bound} não consegue fechar
+o \emph{gap} de integralidade no tempo disponível, devolvendo incumbentes de baixa
+qualidade. É exatamente nesse regime --- instâncias grandes e densas, onde o método exato se
+torna impraticável --- que a meta-heurística se justifica.
+
+\FloatBarrier
 \section{Conclusão}
 \label{sec:conclusao}
 
-% TODO: preencher após a análise dos resultados.
-\textit{Seção a ser preenchida após a análise dos resultados.}
+Este trabalho abordou o problema \emph{Os Melhores Amigos} (OMA) por duas vias
+complementares: uma formulação como programa linear inteiro, resolvida pelos solvers CPLEX
+e HiGHS, e uma meta-heurística de Busca Tabu com construção gulosa, vizinhança por troca e
+avaliação incremental.
 
-% ---------------------------------------------------------------------
+A principal conclusão é que, dentro de um orçamento de tempo de \SI{600}{\second} por
+instância, a \textbf{Busca Tabu supera os métodos exatos}: a configuração tunada atinge
+soluções a cerca de \SI{1.1}{\percent} do melhor valor conhecido em menos de dois segundos
+--- chegando a igualar o BKV em $\texttt{oma05}$ ---, enquanto CPLEX e HiGHS ficam,
+respectivamente, a $\approx \SI{6.3}{\percent}$ e $\approx \SI{32.9}{\percent}$ do BKV sem
+sequer provar otimalidade. Esse comportamento decorre do tamanho quadrático do modelo
+inteiro nos grafos de afinidade densos das instâncias, que inviabiliza o fechamento do
+\emph{gap} pelo \emph{branch-and-bound} no tempo disponível.
+
+A análise de sensibilidade evidenciou que o desempenho da Busca Tabu depende criticamente
+de dois componentes: um \texttt{tenure} moderado (em torno de $20$), que evita ciclos sem
+restringir excessivamente a busca, e a \textbf{diversificação periódica}, cuja remoção
+degrada sensivelmente a qualidade. Os parâmetros de orçamento (\texttt{max\_iter} e
+\texttt{max\_no\_improve}) apresentam ganhos decrescentes, favorecendo valores
+intermediários. Como trabalho futuro, destacam-se o refino da formulação inteira para
+reduzir seu tamanho e a investigação de estratégias de memória de longo prazo na Busca
+Tabu.
+
 \bibliographystyle{plain}
 \bibliography{referencias}
 
