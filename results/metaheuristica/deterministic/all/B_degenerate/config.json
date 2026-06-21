@@ -1,0 +1,9 @@
+{
+  "tenure": 1,
+  "max_no_improve": 25,
+  "max_iter": 250,
+  "diversify_freq": 0,
+  "init": "greedy",
+  "seeds": 1,
+  "deterministic": true
+}
