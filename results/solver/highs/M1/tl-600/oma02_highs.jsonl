@@ -1,0 +1,1 @@
+{"instance": "oma02", "method": "highs", "config_id": "tl-600", "status": "Feasible", "params": {"time_limit_s": 600}, "final_solution": 322.0, "time_ms": 614913.9288320002}

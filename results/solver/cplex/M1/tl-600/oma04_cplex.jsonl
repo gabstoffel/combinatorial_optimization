@@ -1,0 +1,1 @@
+{"instance": "oma04", "method": "cplex", "config_id": "tl-600", "status": "Optimal", "params": {"time_limit_s": 600}, "final_solution": 453.0, "time_ms": 610835.1259810006}
