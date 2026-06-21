@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from functools import cached_property
 
 
 @dataclass
@@ -14,6 +15,18 @@ class Instance:
     n: int
     m: int
     a: list[tuple[int, int, float]]
+
+    @cached_property
+    def affinity(self) -> list[list[float]]:
+        """
+        Matriz de afinidade n×n (simétrica) construída a partir de `a`.
+        Usada pela metaheurística (greedy + tabu), que indexa affinity[i][j].
+        """
+        matrix = [[0.0] * self.n for _ in range(self.n)]
+        for i, j, aij in self.a:
+            matrix[i][j] = aij
+            matrix[j][i] = aij
+        return matrix
 
     @staticmethod
     def create_instance(number_of_people, group_size, affinity):
