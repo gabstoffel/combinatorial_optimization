@@ -12,7 +12,7 @@ def greedy_construction(instance: Instance, start_person: int = None) -> list[in
     """
     n = instance.n
     m = instance.m
-    affinity = instance.affinity
+    affinity = instance.a
 
     solution = set()
     gains = [0.0] * n

@@ -26,7 +26,7 @@ def run_tabu_search(
                        Default 50 means every 50 iters, replace random person.
     """
     n = instance.n
-    affinity = instance.affinity
+    affinity = instance.a
     
     current_solution = set(initial_solution)
     best_solution = set(initial_solution)
