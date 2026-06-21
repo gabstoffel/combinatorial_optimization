@@ -4,7 +4,7 @@ import time
 from pulp import LpStatus
 
 from oma.instance import Instance
-from oma.logger import write_run
+from oma.logger import write_run, Logger
 from oma.solvers import GenericSolver, SolverType, build_model
 from oma.metaheuristica.greedy import greedy_construction
 from oma.metaheuristica.tabu_search import run_tabu_search
@@ -81,7 +81,14 @@ def run_tabu(instance, instance_number):
 
 
 def main():
+    logger = Logger()
+
     instance_number, solver_option = getArguments(sys.argv)
+    
+    logger.info("oma.starting", {
+        "instance_number": instance_number,
+        "solver": solver_option.value
+    })
 
     if instance_number is not None:
         instance = Instance.from_file(instance_number)
