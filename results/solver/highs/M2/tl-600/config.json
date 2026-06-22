@@ -1,0 +1,4 @@
+{
+  "solver": "highs",
+  "time_limit_s": 600
+}

@@ -1,0 +1,7 @@
+{
+  "instance": "oma01",
+  "method": "cplex",
+  "initial_solution": null,
+  "final_solution": 445.0,
+  "time_ms": 1814105.9736998286
+}
