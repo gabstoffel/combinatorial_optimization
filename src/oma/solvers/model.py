@@ -32,3 +32,15 @@ def build_model(instance: Instance) -> LpProblem:
         problem += paired[i, j] >= selected[i] + selected[j] - 1
 
     return problem
+
+
+def selected_indices(problem: LpProblem, n: int) -> list[int]:
+    """Recupera o subconjunto escolhido de um modelo já resolvido, lendo as
+    variáveis `x_i` pelo nome. Uma pessoa é considerada selecionada quando
+    `x_i > 0.5` (tolerância para arredondamento do solver)."""
+    variables = problem.variablesDict()
+    return [
+        person
+        for person in range(n)
+        if (variables[f"x_{person}"].value() or 0) > 0.5
+    ]
